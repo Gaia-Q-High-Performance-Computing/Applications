@@ -1,0 +1,329 @@
+### Estructura de Directorios Recomendada para GAIA-Q-AI
+
+**GenAI Proposal Status: Esta estructura de directorios es generada por IA para el sistema GAIA-Q-AI y debe ser revisada por expertos en arquitectura de software antes de su implementación.**
+
+## Estructura Principal
+
+```plaintext
+gaia-q-ai/
+├── README.md
+├── LICENSE
+├── .gitignore
+├── package.json
+├── tsconfig.json
+├── docker-compose.yml
+├── Dockerfile
+├── src/
+│   ├── core/                      # Núcleo del sistema GAIA-Q-AI
+│   ├── agents/                    # Agentes especializados
+│   ├── knowledge-base/            # Base de conocimientos
+│   ├── interfaces/                # Interfaces de usuario y API
+│   ├── services/                  # Servicios compartidos
+│   ├── utils/                     # Utilidades
+│   └── config/                    # Configuración
+├── profiles/                      # Perfiles YAML de agentes
+├── schemas/                       # Esquemas JSON/YAML
+├── tests/                         # Pruebas
+├── docs/                          # Documentación
+├── scripts/                       # Scripts de utilidad
+└── examples/                      # Ejemplos de uso
+```
+
+## Estructura Detallada
+
+### Núcleo del Sistema (`src/core/`)
+
+```plaintext
+src/core/
+├── mcp/                           # Multi-agent Cognitive Platform
+│   ├── orchestrator.ts            # Orquestador principal
+│   ├── event-bus.ts               # Bus de eventos
+│   ├── knowledge-graph.ts         # Grafo de conocimiento
+│   └── agent-manager.ts           # Gestor de agentes
+├── quantum/                       # Integración con computación cuántica
+│   ├── qpu-interface.ts           # Interfaz con QPU
+│   ├── quantum-algorithms.ts      # Algoritmos cuánticos
+│   └── quantum-scheduler.ts       # Programador de tareas cuánticas
+├── lifecycle/                     # Gestión del ciclo de vida
+│   ├── design-cycle.ts            # Ciclo de diseño
+│   ├── validation-engine.ts       # Motor de validación
+│   └── certification-manager.ts   # Gestor de certificación
+└── types/                         # Tipos y interfaces comunes
+    ├── agent-types.ts             # Tipos de agentes
+    ├── message-types.ts           # Tipos de mensajes
+    └── system-types.ts            # Tipos del sistema
+```
+
+### Agentes Especializados (`src/agents/`)
+
+```plaintext
+src/agents/
+├── base/                          # Clases base para agentes
+│   ├── base-agent.ts              # Agente base
+│   ├── specialist-agent.ts        # Agente especialista
+│   ├── coordinator-agent.ts       # Agente coordinador
+│   └── validator-agent.ts         # Agente validador
+├── sustainability/                # Agente de Sostenibilidad Ambiental
+│   ├── sustainability-agent.ts    # Implementación del agente
+│   ├── lifecycle-assessment.ts    # Evaluación de ciclo de vida
+│   ├── circular-economy.ts        # Economía circular
+│   └── emissions-management.ts    # Gestión de emisiones
+├── propulsion/                    # Agente de Propulsión
+│   ├── propulsion-agent.ts        # Implementación del agente
+│   ├── hybrid-electric.ts         # Propulsión híbrida-eléctrica
+│   ├── saf-integration.ts         # Integración de combustibles sostenibles
+│   └── hydrogen-systems.ts        # Sistemas de hidrógeno
+├── aerodynamics/                  # Agente de Aerodinámica
+├── materials/                     # Agente de Materiales
+├── systems-integration/           # Agente de Integración de Sistemas
+├── quantum-computing/             # Agente de Computación Cuántica
+├── certification/                 # Agente de Certificación
+├── economics/                     # Agente de Economía
+└── ethics/                        # Agente de Ética
+```
+
+### Base de Conocimientos (`src/knowledge-base/`)
+
+```plaintext
+src/knowledge-base/
+├── providers/                     # Proveedores de conocimiento
+│   ├── gaia-qao-standards.ts      # Estándares GAIA-QAO
+│   ├── aerospace-regulations.ts   # Regulaciones aeroespaciales
+│   ├── material-properties.ts     # Propiedades de materiales
+│   └── environmental-standards.ts # Estándares ambientales
+├── connectors/                    # Conectores a fuentes externas
+│   ├── database-connector.ts      # Conector a base de datos
+│   ├── api-connector.ts           # Conector a APIs externas
+│   └── file-connector.ts          # Conector a archivos
+├── graph/                         # Gestión del grafo de conocimiento
+│   ├── graph-manager.ts           # Gestor del grafo
+│   ├── query-engine.ts            # Motor de consultas
+│   └── inference-engine.ts        # Motor de inferencia
+└── cache/                         # Caché de conocimiento
+    ├── cache-manager.ts           # Gestor de caché
+    └── invalidation-strategy.ts   # Estrategia de invalidación
+```
+
+### Interfaces (`src/interfaces/`)
+
+```plaintext
+src/interfaces/
+├── api/                           # API REST/GraphQL
+│   ├── routes/                    # Rutas de API
+│   ├── controllers/               # Controladores
+│   ├── middleware/                # Middleware
+│   └── validators/                # Validadores
+├── ui/                            # Interfaz de usuario
+│   ├── components/                # Componentes de UI
+│   ├── pages/                     # Páginas
+│   ├── hooks/                     # Hooks personalizados
+│   └── styles/                    # Estilos
+├── cli/                           # Interfaz de línea de comandos
+│   ├── commands/                  # Comandos
+│   └── helpers/                   # Ayudantes
+└── quantum/                       # Interfaces cuánticas
+    ├── qpu-client.ts              # Cliente QPU
+    └── quantum-visualizer.ts      # Visualizador cuántico
+```
+
+### Servicios Compartidos (`src/services/`)
+
+```plaintext
+src/services/
+├── authentication/                # Autenticación
+│   ├── auth-service.ts            # Servicio de autenticación
+│   └── permission-service.ts      # Servicio de permisos
+├── logging/                       # Registro
+│   ├── logger.ts                  # Logger
+│   └── audit-service.ts           # Servicio de auditoría
+├── storage/                       # Almacenamiento
+│   ├── file-service.ts            # Servicio de archivos
+│   └── database-service.ts        # Servicio de base de datos
+├── messaging/                     # Mensajería
+│   ├── message-broker.ts          # Broker de mensajes
+│   └── notification-service.ts    # Servicio de notificaciones
+├── monitoring/                    # Monitoreo
+│   ├── performance-monitor.ts     # Monitor de rendimiento
+│   └── health-check.ts            # Verificación de salud
+└── blockchain/                    # Blockchain
+    ├── material-passport.ts       # Pasaporte de materiales
+    └── traceability-service.ts    # Servicio de trazabilidad
+```
+
+### Utilidades (`src/utils/`)
+
+```plaintext
+src/utils/
+├── validation/                    # Validación
+│   ├── schema-validator.ts        # Validador de esquemas
+│   └── data-validator.ts          # Validador de datos
+├── transformation/                # Transformación
+│   ├── data-transformer.ts        # Transformador de datos
+│   └── format-converter.ts        # Conversor de formatos
+├── optimization/                  # Optimización
+│   ├── quantum-optimizer.ts       # Optimizador cuántico
+│   └── classical-optimizer.ts     # Optimizador clásico
+└── helpers/                       # Ayudantes
+    ├── error-handler.ts           # Manejador de errores
+    ├── logger.ts                  # Logger
+    └── config-loader.ts           # Cargador de configuración
+```
+
+### Configuración (`src/config/`)
+
+```plaintext
+src/config/
+├── app-config.ts                  # Configuración de la aplicación
+├── agent-config.ts                # Configuración de agentes
+├── quantum-config.ts              # Configuración cuántica
+├── api-config.ts                  # Configuración de API
+├── database-config.ts             # Configuración de base de datos
+└── environment/                   # Configuración por entorno
+    ├── development.ts             # Desarrollo
+    ├── testing.ts                 # Pruebas
+    ├── staging.ts                 # Preproducción
+    └── production.ts              # Producción
+```
+
+### Perfiles de Agentes (`profiles/`)
+
+```plaintext
+profiles/
+├── sustainability/
+│   ├── gaia_qai_agent_profile_sustainability.yaml
+│   └── sustainability_capabilities.yaml
+├── propulsion/
+│   ├── gaia_qai_agent_profile_propulsion.yaml
+│   └── propulsion_capabilities.yaml
+├── aerodynamics/
+│   ├── gaia_qai_agent_profile_aerodynamics.yaml
+│   └── aerodynamics_capabilities.yaml
+├── materials/
+│   ├── gaia_qai_agent_profile_materials.yaml
+│   └── materials_capabilities.yaml
+└── templates/
+    └── gaia_qai_agent_profile_template.yaml
+```
+
+### Esquemas (`schemas/`)
+
+```plaintext
+schemas/
+├── agent/
+│   ├── agent-profile.json         # Esquema de perfil de agente
+│   └── agent-capability.json      # Esquema de capacidad de agente
+├── knowledge/
+│   ├── knowledge-graph.json       # Esquema de grafo de conocimiento
+│   └── knowledge-query.json       # Esquema de consulta de conocimiento
+├── design/
+│   ├── design-request.json        # Esquema de solicitud de diseño
+│   └── design-proposal.json       # Esquema de propuesta de diseño
+├── sustainability/
+│   ├── lifecycle-assessment.json  # Esquema de evaluación de ciclo de vida
+│   └── carbon-footprint.json      # Esquema de huella de carbono
+└── material/
+    ├── material-passport.json     # Esquema de pasaporte de material
+    └── material-specification.json # Esquema de especificación de material
+```
+
+### Pruebas (`tests/`)
+
+```plaintext
+tests/
+├── unit/                          # Pruebas unitarias
+│   ├── core/                      # Pruebas del núcleo
+│   ├── agents/                    # Pruebas de agentes
+│   └── services/                  # Pruebas de servicios
+├── integration/                   # Pruebas de integración
+│   ├── agent-collaboration/       # Colaboración entre agentes
+│   ├── knowledge-integration/     # Integración de conocimiento
+│   └── api-integration/           # Integración de API
+├── e2e/                           # Pruebas de extremo a extremo
+│   ├── design-workflow/           # Flujo de trabajo de diseño
+│   └── sustainability-assessment/ # Evaluación de sostenibilidad
+├── performance/                   # Pruebas de rendimiento
+│   ├── quantum-performance/       # Rendimiento cuántico
+│   └── scaling-tests/             # Pruebas de escalabilidad
+└── fixtures/                      # Datos de prueba
+    ├── agent-profiles/            # Perfiles de agentes
+    ├── design-requests/           # Solicitudes de diseño
+    └── knowledge-data/            # Datos de conocimiento
+```
+
+### Documentación (`docs/`)
+
+```plaintext
+docs/
+├── architecture/                  # Arquitectura
+│   ├── system-overview.md         # Visión general del sistema
+│   ├── agent-architecture.md      # Arquitectura de agentes
+│   └── quantum-integration.md     # Integración cuántica
+├── agents/                        # Documentación de agentes
+│   ├── sustainability-agent.md    # Agente de sostenibilidad
+│   ├── propulsion-agent.md        # Agente de propulsión
+│   └── agent-collaboration.md     # Colaboración entre agentes
+├── api/                           # Documentación de API
+│   ├── api-reference.md           # Referencia de API
+│   └── authentication.md          # Autenticación
+├── guides/                        # Guías
+│   ├── getting-started.md         # Primeros pasos
+│   ├── creating-agents.md         # Creación de agentes
+│   └── knowledge-management.md    # Gestión de conocimiento
+├── tutorials/                     # Tutoriales
+│   ├── sustainability-assessment.md # Evaluación de sostenibilidad
+│   └── design-optimization.md     # Optimización de diseño
+└── reference/                     # Referencia
+    ├── configuration.md           # Configuración
+    ├── schemas.md                 # Esquemas
+    └── glossary.md                # Glosario
+```
+
+## Consideraciones Adicionales
+
+### Estructura para Escalabilidad
+
+Esta estructura está diseñada para escalar a medida que se añaden más agentes y funcionalidades al sistema GAIA-Q-AI. Los directorios están organizados de manera modular para permitir:
+
+1. **Adición de nuevos agentes**: Simplemente añadiendo nuevos directorios en `src/agents/`
+2. **Expansión de la base de conocimientos**: Añadiendo nuevos proveedores en `src/knowledge-base/providers/`
+3. **Integración con nuevos sistemas**: Extendiendo los conectores en `src/knowledge-base/connectors/`
+
+
+### Convenciones de Nomenclatura
+
+Para mantener la coherencia en todo el proyecto, se recomienda seguir estas convenciones:
+
+1. **Archivos**: Usar `kebab-case` para nombres de archivos (ej. `agent-manager.ts`)
+2. **Clases**: Usar `PascalCase` para nombres de clases (ej. `SustainabilityAgent`)
+3. **Interfaces**: Usar `PascalCase` con prefijo `I` (ej. `IAgentProfile`)
+4. **Tipos**: Usar `PascalCase` (ej. `AgentType`)
+5. **Funciones y variables**: Usar `camelCase` (ej. `calculateEmissions`)
+6. **Constantes**: Usar `UPPER_SNAKE_CASE` (ej. `MAX_AGENTS`)
+
+
+### Gestión de Dependencias
+
+Se recomienda organizar las dependencias en el `package.json` según su propósito:
+
+1. **Dependencias principales**: Frameworks y bibliotecas esenciales
+2. **Dependencias de desarrollo**: Herramientas de prueba, linting y compilación
+3. **Dependencias opcionales**: Funcionalidades adicionales que no son críticas
+
+
+### Configuración de Docker
+
+El `Dockerfile` y `docker-compose.yml` deben configurarse para soportar:
+
+1. **Entornos de desarrollo y producción**
+2. **Servicios necesarios** (base de datos, caché, etc.)
+3. **Integración con QPU** (Unidad de Procesamiento Cuántico)
+4. **Volúmenes persistentes** para datos y configuración
+
+
+## Próximos Pasos
+
+1. **Implementar la estructura base**: Crear los directorios y archivos principales
+2. **Configurar el entorno de desarrollo**: Instalar dependencias y herramientas
+3. **Implementar el núcleo del sistema**: Desarrollar los componentes básicos
+4. **Crear el primer agente**: Implementar el Agente de Sostenibilidad Ambiental
+5. **Configurar la integración continua**: Establecer pipelines de CI/CD
