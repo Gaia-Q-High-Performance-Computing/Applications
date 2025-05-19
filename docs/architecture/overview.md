@@ -55,7 +55,7 @@ The Quantum Verification Documentation Structure provides a comprehensive framew
 
 ### Documentation Files
 
-- [Documentation Architecture Overview](./docs/architecture/overview.md)
+- [Documentation Architecture Overview](./overview.md)
 - [Master Verification Plan Template](./docs/templates/master-verification-plan.md)
 - [Verification Framework Template](./docs/templates/verification-framework.md)
 - [Standards Compliance Matrix Template](./docs/templates/standards-compliance-matrix.md)
