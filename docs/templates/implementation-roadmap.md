@@ -85,6 +85,121 @@ export default function ImplementationRoadmap() {
             </div>
           </CardContent>
         </Card>
+
+        <Card>
+          <CardHeader className="bg-yellow-50">
+            <CardTitle>Phase 4: Aerospace System Design Layer Documentation</CardTitle>
+          </CardHeader>
+          <CardContent>
+            <p className="mb-2">Q2 2026</p>
+            <ul className="list-disc pl-6">
+              <li>Develop comprehensive documentation for Aerospace System Design Layer</li>
+              <li>Include detailed descriptions of architecture, components, and processes</li>
+              <li>Ensure compliance with aerospace standards</li>
+              <li>Conduct review and validation</li>
+              <li>Prepare for certification submission</li>
+            </ul>
+            <div className="mt-4">
+              <div className="flex justify-between mb-1">
+                <span className="text-sm font-medium">Progress</span>
+                <span className="text-sm font-medium">0%</span>
+              </div>
+              <Progress value={0} className="h-2" />
+            </div>
+          </CardContent>
+        </Card>
+
+        <Card>
+          <CardHeader className="bg-orange-50">
+            <CardTitle>Phase 5: Quantum Machine Learning Layer Documentation</CardTitle>
+          </CardHeader>
+          <CardContent>
+            <p className="mb-2">Q3 2026</p>
+            <ul className="list-disc pl-6">
+              <li>Develop comprehensive documentation for Quantum Machine Learning Layer</li>
+              <li>Include detailed descriptions of algorithms, models, and processes</li>
+              <li>Ensure compliance with aerospace standards</li>
+              <li>Conduct review and validation</li>
+              <li>Prepare for certification submission</li>
+            </ul>
+            <div className="mt-4">
+              <div className="flex justify-between mb-1">
+                <span className="text-sm font-medium">Progress</span>
+                <span className="text-sm font-medium">0%</span>
+              </div>
+              <Progress value={0} className="h-2" />
+            </div>
+          </CardContent>
+        </Card>
+
+        <Card>
+          <CardHeader className="bg-red-50">
+            <CardTitle>Phase 6: Quantum Optimization Layer Documentation</CardTitle>
+          </CardHeader>
+          <CardContent>
+            <p className="mb-2">Q4 2026</p>
+            <ul className="list-disc pl-6">
+              <li>Develop comprehensive documentation for Quantum Optimization Layer</li>
+              <li>Include detailed descriptions of algorithms, techniques, and processes</li>
+              <li>Ensure compliance with aerospace standards</li>
+              <li>Conduct review and validation</li>
+              <li>Prepare for certification submission</li>
+            </ul>
+            <div className="mt-4">
+              <div className="flex justify-between mb-1">
+                <span className="text-sm font-medium">Progress</span>
+                <span className="text-sm font-medium">0%</span>
+              </div>
+              <Progress value={0} className="h-2" />
+            </div>
+          </CardContent>
+        </Card>
+
+        <Card>
+          <CardHeader className="bg-teal-50">
+            <CardTitle>Phase 7: Quantum Simulation Layer Documentation</CardTitle>
+          </CardHeader>
+          <CardContent>
+            <p className="mb-2">Q1 2027</p>
+            <ul className="list-disc pl-6">
+              <li>Develop comprehensive documentation for Quantum Simulation Layer</li>
+              <li>Include detailed descriptions of simulation engines, models, and processes</li>
+              <li>Ensure compliance with aerospace standards</li>
+              <li>Conduct review and validation</li>
+              <li>Prepare for certification submission</li>
+            </ul>
+            <div className="mt-4">
+              <div className="flex justify-between mb-1">
+                <span className="text-sm font-medium">Progress</span>
+                <span className="text-sm font-medium">0%</span>
+              </div>
+              <Progress value={0} className="h-2" />
+            </div>
+          </CardContent>
+        </Card>
+
+        <Card>
+          <CardHeader className="bg-indigo-50">
+            <CardTitle>Phase 8: Quantum Chemistry Layer Documentation</CardTitle>
+          </CardHeader>
+          <CardContent>
+            <p className="mb-2">Q2 2027</p>
+            <ul className="list-disc pl-6">
+              <li>Develop comprehensive documentation for Quantum Chemistry Layer</li>
+              <li>Include detailed descriptions of molecular modeling tools, algorithms, and processes</li>
+              <li>Ensure compliance with aerospace standards</li>
+              <li>Conduct review and validation</li>
+              <li>Prepare for certification submission</li>
+            </ul>
+            <div className="mt-4">
+              <div className="flex justify-between mb-1">
+                <span className="text-sm font-medium">Progress</span>
+                <span className="text-sm font-medium">0%</span>
+              </div>
+              <Progress value={0} className="h-2" />
+            </div>
+          </CardContent>
+        </Card>
       </div>
       
       <h2 className="text-2xl font-semibold mb-4">2. Key Milestones</h2>
@@ -132,6 +247,36 @@ export default function ImplementationRoadmap() {
             <TableCell>Certification Submission</TableCell>
             <TableCell>Q2 2026</TableCell>
             <TableCell>Complete Documentation Package</TableCell>
+            <TableCell>Planned</TableCell>
+          </TableRow>
+          <TableRow>
+            <TableCell>Aerospace System Design Layer Documentation Complete</TableCell>
+            <TableCell>Q2 2026</TableCell>
+            <TableCell>Comprehensive documentation for Aerospace System Design Layer</TableCell>
+            <TableCell>Planned</TableCell>
+          </TableRow>
+          <TableRow>
+            <TableCell>Quantum Machine Learning Layer Documentation Complete</TableCell>
+            <TableCell>Q3 2026</TableCell>
+            <TableCell>Comprehensive documentation for Quantum Machine Learning Layer</TableCell>
+            <TableCell>Planned</TableCell>
+          </TableRow>
+          <TableRow>
+            <TableCell>Quantum Optimization Layer Documentation Complete</TableCell>
+            <TableCell>Q4 2026</TableCell>
+            <TableCell>Comprehensive documentation for Quantum Optimization Layer</TableCell>
+            <TableCell>Planned</TableCell>
+          </TableRow>
+          <TableRow>
+            <TableCell>Quantum Simulation Layer Documentation Complete</TableCell>
+            <TableCell>Q1 2027</TableCell>
+            <TableCell>Comprehensive documentation for Quantum Simulation Layer</TableCell>
+            <TableCell>Planned</TableCell>
+          </TableRow>
+          <TableRow>
+            <TableCell>Quantum Chemistry Layer Documentation Complete</TableCell>
+            <TableCell>Q2 2027</TableCell>
+            <TableCell>Comprehensive documentation for Quantum Chemistry Layer</TableCell>
             <TableCell>Planned</TableCell>
           </TableRow>
         </TableBody>

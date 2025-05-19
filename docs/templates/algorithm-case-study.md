@@ -24,6 +24,10 @@ export default function AlgorithmCaseStudyTemplate() {
           <TabsTrigger value="verification">Verification</TabsTrigger>
           <TabsTrigger value="results">Results</TabsTrigger>
           <TabsTrigger value="compliance">Compliance</TabsTrigger>
+          <TabsTrigger value="qml">Quantum Machine Learning Layer Documentation</TabsTrigger>
+          <TabsTrigger value="qopt">Quantum Optimization Layer Documentation</TabsTrigger>
+          <TabsTrigger value="qsim">Quantum Simulation Layer Documentation</TabsTrigger>
+          <TabsTrigger value="qchem">Quantum Chemistry Layer Documentation</TabsTrigger>
         </TabsList>
         
         <TabsContent value="overview" className="p-4">
@@ -64,7 +68,317 @@ export default function AlgorithmCaseStudyTemplate() {
           </Card>
         </TabsContent>
         
-        {/* Additional tab content would be implemented similarly */}
+        <TabsContent value="qml" className="p-4">
+          <h2 className="text-2xl font-semibold mb-4">Quantum Machine Learning Layer Documentation</h2>
+          <p className="mb-4">
+            The Quantum Machine Learning (QML) Layer provides advanced pattern recognition, classification, and prediction capabilities for the Ampel360 BWB Q100 aircraft. This layer leverages quantum computing advantages to enhance machine learning tasks critical for aircraft operations, maintenance, and safety.
+          </p>
+          
+          <h3 className="text-xl font-semibold mb-2">Purpose</h3>
+          <p className="mb-4">
+            The purpose of this layer is to:
+          </p>
+          <ul className="list-disc pl-6 mb-4">
+            <li>Implement quantum-enhanced machine learning algorithms for aerospace applications</li>
+            <li>Provide predictive maintenance capabilities to enhance aircraft reliability</li>
+            <li>Enable anomaly detection for early identification of potential issues</li>
+            <li>Support pattern recognition for complex aerospace data analysis</li>
+            <li>Facilitate sensor data fusion for improved situational awareness</li>
+          </ul>
+          
+          <h3 className="text-xl font-semibold mb-2">Layer Architecture</h3>
+          <p className="mb-4">
+            The Quantum Machine Learning Layer consists of the following components:
+          </p>
+          <Card className="mb-4">
+            <CardHeader>
+              <CardTitle>Quantum Algorithms</CardTitle>
+            </CardHeader>
+            <CardContent>
+              <p>
+                Core quantum machine learning algorithms including QSVM, VQC, QNN, QTL, and QRL, each optimized for specific aerospace applications.
+              </p>
+            </CardContent>
+          </Card>
+          
+          <Card className="mb-4">
+            <CardHeader>
+              <CardTitle>Data Processing Pipeline</CardTitle>
+            </CardHeader>
+            <CardContent>
+              <p>
+                Components for data preparation, feature mapping, quantum encoding, and classical post-processing of results.
+              </p>
+            </CardContent>
+          </Card>
+          
+          <Card className="mb-4">
+            <CardHeader>
+              <CardTitle>Training Framework</CardTitle>
+            </CardHeader>
+            <CardContent>
+              <p>
+                Infrastructure for training quantum machine learning models with aerospace data, including variational optimization methods.
+              </p>
+            </CardContent>
+          </Card>
+          
+          <Card className="mb-4">
+            <CardHeader>
+              <CardTitle>Inference Engine</CardTitle>
+            </CardHeader>
+            <CardContent>
+              <p>
+                Real-time inference capabilities for deploying trained quantum models in operational contexts.
+              </p>
+            </CardContent>
+          </Card>
+          
+          <Card className="mb-4">
+            <CardHeader>
+              <CardTitle>Validation Framework</CardTitle>
+            </CardHeader>
+            <CardContent>
+              <p>
+                Tools and methodologies for validating quantum machine learning models against aerospace requirements.
+              </p>
+            </CardContent>
+          </Card>
+        </TabsContent>
+        
+        <TabsContent value="qopt" className="p-4">
+          <h2 className="text-2xl font-semibold mb-4">Quantum Optimization Layer Documentation</h2>
+          <p className="mb-4">
+            The Quantum Optimization Layer provides advanced optimization capabilities for the Ampel360 BWB Q100 aircraft. This layer leverages quantum computing advantages to solve complex optimization problems that are critical for aircraft design, operations, and maintenance.
+          </p>
+          
+          <h3 className="text-xl font-semibold mb-2">Purpose</h3>
+          <p className="mb-4">
+            The purpose of this layer is to:
+          </p>
+          <ul className="list-disc pl-6 mb-4">
+            <li>Implement quantum optimization algorithms for aerospace applications</li>
+            <li>Solve complex combinatorial optimization problems more efficiently</li>
+            <li>Optimize aircraft structural design and materials usage</li>
+            <li>Enhance resource allocation and scheduling for operations and maintenance</li>
+            <li>Provide route optimization and flight planning capabilities</li>
+          </ul>
+          
+          <h3 className="text-xl font-semibold mb-2">Layer Architecture</h3>
+          <p className="mb-4">
+            The Quantum Optimization Layer consists of the following components:
+          </p>
+          <Card className="mb-4">
+            <CardHeader>
+              <CardTitle>Quantum Algorithms</CardTitle>
+            </CardHeader>
+            <CardContent>
+              <p>
+                Core quantum optimization algorithms including QAOA, VQE, Quantum Annealing, QUBO, and QKS, each tailored for specific aerospace optimization problems.
+              </p>
+            </CardContent>
+          </Card>
+          
+          <Card className="mb-4">
+            <CardHeader>
+              <CardTitle>Problem Encoding</CardTitle>
+            </CardHeader>
+            <CardContent>
+              <p>
+                Methods for encoding aerospace optimization problems into formats suitable for quantum processing, including Hamiltonian formulations and binary encodings.
+              </p>
+            </CardContent>
+          </Card>
+          
+          <Card className="mb-4">
+            <CardHeader>
+              <CardTitle>Solver Framework</CardTitle>
+            </CardHeader>
+            <CardContent>
+              <p>
+                Infrastructure for executing quantum optimization algorithms, including parameter optimization and hybrid classical-quantum approaches.
+              </p>
+            </CardContent>
+          </Card>
+          
+          <Card className="mb-4">
+            <CardHeader>
+              <CardTitle>Solution Decoding</CardTitle>
+            </CardHeader>
+            <CardContent>
+              <p>
+                Methods for interpreting quantum algorithm outputs and translating them into actionable aerospace solutions.
+              </p>
+            </CardContent>
+          </Card>
+          
+          <Card className="mb-4">
+            <CardHeader>
+              <CardTitle>Validation Framework</CardTitle>
+            </CardHeader>
+            <CardContent>
+              <p>
+                Tools and methodologies for validating quantum optimization results against aerospace requirements and constraints.
+              </p>
+            </CardContent>
+          </Card>
+        </TabsContent>
+        
+        <TabsContent value="qsim" className="p-4">
+          <h2 className="text-2xl font-semibold mb-4">Quantum Simulation Layer Documentation</h2>
+          <p className="mb-4">
+            The Quantum Simulation Layer provides advanced simulation capabilities for the Ampel360 BWB Q100 aircraft. This layer leverages quantum computing advantages to simulate complex physical systems and phenomena that are critical for aircraft design, performance analysis, and safety assessment.
+          </p>
+          
+          <h3 className="text-xl font-semibold mb-2">Purpose</h3>
+          <p className="mb-4">
+            The purpose of this layer is to:
+          </p>
+          <ul className="list-disc pl-6 mb-4">
+            <li>Implement quantum simulation algorithms for aerospace applications</li>
+            <li>Enable high-fidelity simulation of complex aerodynamic phenomena</li>
+            <li>Provide advanced structural analysis capabilities</li>
+            <li>Simulate acoustic and vibration characteristics</li>
+            <li>Support materials and fatigue analysis through quantum molecular dynamics</li>
+          </ul>
+          
+          <h3 className="text-xl font-semibold mb-2">Layer Architecture</h3>
+          <p className="mb-4">
+            The Quantum Simulation Layer consists of the following components:
+          </p>
+          <Card className="mb-4">
+            <CardHeader>
+              <CardTitle>Quantum Algorithms</CardTitle>
+            </CardHeader>
+            <CardContent>
+              <p>
+                Core quantum simulation algorithms including QFT, HHL, QPE, QWS, and QMD, each specialized for specific aerospace simulation tasks.
+              </p>
+            </CardContent>
+          </Card>
+          
+          <Card className="mb-4">
+            <CardHeader>
+              <CardTitle>Model Encoding</CardTitle>
+            </CardHeader>
+            <CardContent>
+              <p>
+                Methods for encoding aerospace physical models into quantum representations, including Hamiltonian formulations and differential equation mappings.
+              </p>
+            </CardContent>
+          </Card>
+          
+          <Card className="mb-4">
+            <CardHeader>
+              <CardTitle>Simulation Engine</CardTitle>
+            </CardHeader>
+            <CardContent>
+              <p>
+                Infrastructure for executing quantum simulation algorithms, including time evolution methods and measurement strategies.
+              </p>
+            </CardContent>
+          </Card>
+          
+          <Card className="mb-4">
+            <CardHeader>
+              <CardTitle>Result Analysis</CardTitle>
+            </CardHeader>
+            <CardContent>
+              <p>
+                Tools for interpreting quantum simulation outputs and translating them into actionable aerospace engineering insights.
+              </p>
+            </CardContent>
+          </Card>
+          
+          <Card className="mb-4">
+            <CardHeader>
+              <CardTitle>Validation Framework</CardTitle>
+            </CardHeader>
+            <CardContent>
+              <p>
+                Methods for validating quantum simulation results against classical benchmarks, experimental data, and aerospace requirements.
+              </p>
+            </CardContent>
+          </Card>
+        </TabsContent>
+        
+        <TabsContent value="qchem" className="p-4">
+          <h2 className="text-2xl font-semibold mb-4">Quantum Chemistry Layer Documentation</h2>
+          <p className="mb-4">
+            The Quantum Chemistry Layer provides advanced molecular and materials simulation capabilities for the Ampel360 BWB Q100 aircraft. This layer leverages quantum computing advantages to model and analyze chemical systems critical for materials development, fuel efficiency, and environmental performance.
+          </p>
+          
+          <h3 className="text-xl font-semibold mb-2">Purpose</h3>
+          <p className="mb-4">
+            The purpose of this layer is to:
+          </p>
+          <ul className="list-disc pl-6 mb-4">
+            <li>Implement quantum chemistry algorithms for aerospace materials applications</li>
+            <li>Enable high-accuracy simulation of composite materials properties</li>
+            <li>Provide electronic structure analysis for novel aerospace materials</li>
+            <li>Simulate aging and degradation processes in aircraft materials</li>
+            <li>Support the development of advanced coatings and catalysts for aerospace applications</li>
+          </ul>
+          
+          <h3 className="text-xl font-semibold mb-2">Layer Architecture</h3>
+          <p className="mb-4">
+            The Quantum Chemistry Layer consists of the following components:
+          </p>
+          <Card className="mb-4">
+            <CardHeader>
+              <CardTitle>Quantum Algorithms</CardTitle>
+            </CardHeader>
+            <CardContent>
+              <p>
+                Core quantum chemistry algorithms including VQE, QPE, QITE, QSD, and QLDCA, each specialized for specific molecular and materials simulation tasks.
+              </p>
+            </CardContent>
+          </Card>
+          
+          <Card className="mb-4">
+            <CardHeader>
+              <CardTitle>Molecular Encoding</CardTitle>
+            </CardHeader>
+            <CardContent>
+              <p>
+                Methods for encoding molecular structures and interactions into quantum representations, including qubit mappings and basis set transformations.
+              </p>
+            </CardContent>
+          </Card>
+          
+          <Card className="mb-4">
+            <CardHeader>
+              <CardTitle>Hamiltonian Generation</CardTitle>
+            </CardHeader>
+            <CardContent>
+              <p>
+                Tools for generating molecular Hamiltonians for aerospace materials, including methods for reducing computational complexity.
+              </p>
+            </CardContent>
+          </Card>
+          
+          <Card className="mb-4">
+            <CardHeader>
+              <CardTitle>Property Calculation</CardTitle>
+            </CardHeader>
+            <CardContent>
+              <p>
+                Methods for calculating material properties relevant to aerospace applications, including mechanical, thermal, and chemical properties.
+              </p>
+            </CardContent>
+          </Card>
+          
+          <Card className="mb-4">
+            <CardHeader>
+              <CardTitle>Validation Framework</CardTitle>
+            </CardHeader>
+            <CardContent>
+              <p>
+                Tools for validating quantum chemistry results against experimental data and classical simulations for aerospace materials.
+              </p>
+            </CardContent>
+          </Card>
+        </TabsContent>
       </Tabs>
       
       <div className="mt-8 text-sm text-gray-600 border-t border-gray-200 pt-4">

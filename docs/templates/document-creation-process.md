@@ -23,6 +23,11 @@ export default function DocumentCreationProcess() {
             <li>Use the Tool Qualification Plan template for tool qualification documents</li>
             <li>Use the Algorithm Case Study template for case studies</li>
             <li>Use the Verification Report template for reports</li>
+            <li>Use the Aerospace System Design Layer Documentation template for Aerospace System Design Layer documents</li>
+            <li>Use the Quantum Machine Learning Layer Documentation template for Quantum Machine Learning Layer documents</li>
+            <li>Use the Quantum Optimization Layer Documentation template for Quantum Optimization Layer documents</li>
+            <li>Use the Quantum Simulation Layer Documentation template for Quantum Simulation Layer documents</li>
+            <li>Use the Quantum Chemistry Layer Documentation template for Quantum Chemistry Layer documents</li>
           </ul>
         </Step>
         
