@@ -66,7 +66,7 @@ export default function VerificationFrameworkTemplate() {
                 <li>Superposition and entanglement effects</li>
                 <li>Probabilistic measurement outcomes</li>
                 <li>Quantum noise and decoherence</li>
-                <li>Complex mathematical formalism</li>
+                                <li>Complex mathematical formalism</li>
                 <li>Limited classical simulation capacity for large quantum systems</li>
                 <li>Emergent quantum-classical boundaries</li>
               </ul>
@@ -91,20 +91,19 @@ export default function VerificationFrameworkTemplate() {
         <h3 className="text-xl font-semibold mb-2">Documentation Files</h3>
         <ul className="list-disc pl-6 mb-4">
           <li><a href="../architecture/overview.md">Documentation Architecture Overview</a></li>
-          <li><a href="./docs/templates/master-verification-plan.md">Master Verification Plan Template</a></li>
-          <li><a href="./docs/templates/verification-framework.md">Verification Framework Template</a></li>
-          <li><a href="./docs/templates/standards-compliance-matrix.md">Standards Compliance Matrix Template</a></li>
-          <li><a href="./docs/templates/tool-qualification-plan.md">Tool Qualification Plan Template</a></li>
-          <li><a href="./docs/templates/algorithm-case-study.md">Algorithm Case Study Template</a></li>
-          <li><a href="./docs/templates/verification-report.md">Verification Report Template</a></li>
-          <li><a href="./docs/templates/document-creation-process.md">Document Creation Process Guide</a></li>
-          <li><a href="./docs/templates/metadata-standards.md">Metadata Standards Guide</a></li>
-          <li><a href="./docs/templates/document-relationships.md">Document Relationships and Traceability Guide</a></li>
-          <li><a href="./docs/templates/implementation-roadmap.md">Implementation Roadmap</a></li>
-          <li><a href="./docs/templates/document-management-system.md">Document Management System Guide</a></li>
+          <li><a href="./master-verification-plan.md">Master Verification Plan Template</a></li>
+          <li><a href="./verification-framework.md">Verification Framework Template</a></li>
+          <li><a href="./standards-compliance-matrix.md">Standards Compliance Matrix Template</a></li>
+          <li><a href="./tool-qualification-plan.md">Tool Qualification Plan Template</a></li>
+          <li><a href="./algorithm-case-study.md">Algorithm Case Study Template</a></li>
+          <li><a href="./verification-report.md">Verification Report Template</a></li>
+          <li><a href="./document-creation-process.md">Document Creation Process Guide</a></li>
+          <li><a href="./metadata-standards.md">Metadata Standards Guide</a></li>
+          <li><a href="./document-relationships.md">Document Relationships and Traceability Guide</a></li>
+          <li><a href="./implementation-roadmap.md">Implementation Roadmap</a></li>
+          <li><a href="./document-management-system.md">Document Management System Guide</a></li>
         </ul>
       </div>
     </div>
   );
 }
-```
