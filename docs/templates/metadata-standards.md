@@ -137,7 +137,7 @@ export default function MetadataStandards() {
         </p>
         <h3 className="text-xl font-semibold mb-2">Documentation Files</h3>
         <ul className="list-disc pl-6 mb-4">
-          <li><a href="./docs/architecture/overview.md">Documentation Architecture Overview</a></li>
+          <li><a href="../architecture/overview.md">Documentation Architecture Overview</a></li>
           <li><a href="./docs/templates/master-verification-plan.md">Master Verification Plan Template</a></li>
           <li><a href="./docs/templates/verification-framework.md">Verification Framework Template</a></li>
           <li><a href="./docs/templates/standards-compliance-matrix.md">Standards Compliance Matrix Template</a></li>
