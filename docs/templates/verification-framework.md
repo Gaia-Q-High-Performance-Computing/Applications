@@ -66,7 +66,7 @@ export default function VerificationFrameworkTemplate() {
                 <li>Superposition and entanglement effects</li>
                 <li>Probabilistic measurement outcomes</li>
                 <li>Quantum noise and decoherence</li>
-                <li>Complex mathematical formalism</li>
+                                <li>Complex mathematical formalism</li>
                 <li>Limited classical simulation capacity for large quantum systems</li>
                 <li>Emergent quantum-classical boundaries</li>
               </ul>
@@ -107,4 +107,3 @@ export default function VerificationFrameworkTemplate() {
     </div>
   );
 }
-```
