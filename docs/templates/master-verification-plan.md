@@ -80,7 +80,249 @@ export default function MasterVerificationPlanTemplate() {
           </Table>
         </TabsContent>
         
-        {/* Additional tab content would be implemented similarly */}
+        <TabsContent value="scope" className="p-4">
+          <h2 className="text-2xl font-semibold mb-4">2. Scope and Objectives</h2>
+          <p className="mb-4">
+            This section defines the scope and objectives of the verification activities for the quantum algorithms used in the Ampel360 BWB Q100 aircraft.
+          </p>
+          
+          <h3 className="text-xl font-semibold mb-2">2.1 Scope</h3>
+          <p className="mb-4">
+            The scope of this MVP includes the verification of the following quantum algorithms:
+          </p>
+          <ul className="list-disc pl-6 mb-4">
+            <li>Quantum Support Vector Machine (QSVM)</li>
+            <li>Variational Quantum Classifier (VQC)</li>
+            <li>Quantum Approximate Optimization Algorithm (QAOA)</li>
+            <li>Quantum Phase Estimation (QPE)</li>
+            <li>Quantum Fourier Transform (QFT)</li>
+          </ul>
+          
+          <h3 className="text-xl font-semibold mb-2">2.2 Objectives</h3>
+          <p className="mb-4">
+            The objectives of the verification activities are to:
+          </p>
+          <ul className="list-disc pl-6 mb-4">
+            <li>Ensure the correctness and reliability of the quantum algorithms</li>
+            <li>Demonstrate compliance with EASA certification standards</li>
+            <li>Provide evidence for certification</li>
+            <li>Identify and mitigate potential risks</li>
+            <li>Validate the performance and safety of the quantum algorithms</li>
+          </ul>
+        </TabsContent>
+        
+        <TabsContent value="strategy" className="p-4">
+          <h2 className="text-2xl font-semibold mb-4">3. Verification Strategy</h2>
+          <p className="mb-4">
+            This section defines the verification strategy for the quantum algorithms used in the Ampel360 BWB Q100 aircraft.
+          </p>
+          
+          <h3 className="text-xl font-semibold mb-2">3.1 Verification Approach</h3>
+          <p className="mb-4">
+            The verification approach includes the following activities:
+          </p>
+          <ul className="list-disc pl-6 mb-4">
+            <li>Formal verification of quantum algorithms</li>
+            <li>Simulation-based verification</li>
+            <li>Hardware-in-the-loop testing</li>
+            <li>Performance testing</li>
+            <li>Safety analysis</li>
+          </ul>
+          
+          <h3 className="text-xl font-semibold mb-2">3.2 Verification Techniques</h3>
+          <p className="mb-4">
+            The following verification techniques will be used:
+          </p>
+          <ul className="list-disc pl-6 mb-4">
+            <li>Model checking</li>
+            <li>Theorem proving</li>
+            <li>Simulation</li>
+            <li>Testing</li>
+            <li>Inspection</li>
+          </ul>
+          
+          <h3 className="text-xl font-semibold mb-2">3.3 Verification Tools</h3>
+          <p className="mb-4">
+            The following tools will be used for verification:
+          </p>
+          <Table>
+            <TableHeader>
+              <TableRow>
+                <TableHead>Tool Name</TableHead>
+                <TableHead>Version</TableHead>
+                <TableHead>Purpose</TableHead>
+              </TableRow>
+            </TableHeader>
+            <TableBody>
+              <TableRow>
+                <TableCell>Qiskit</TableCell>
+                <TableCell>0.45.0</TableCell>
+                <TableCell>Quantum circuit development and simulation</TableCell>
+              </TableRow>
+              <TableRow>
+                <TableCell>QuMC</TableCell>
+                <TableCell>1.2.3</TableCell>
+                <TableCell>Quantum model checking</TableCell>
+              </TableRow>
+              <TableRow>
+                <TableCell>QPMC</TableCell>
+                <TableCell>2.0.1</TableCell>
+                <TableCell>Quantum probabilistic model checking</TableCell>
+              </TableRow>
+              <TableRow>
+                <TableCell>Coq with QuanTA</TableCell>
+                <TableCell>8.16.0</TableCell>
+                <TableCell>Theorem proving for quantum algorithms</TableCell>
+              </TableRow>
+              <TableRow>
+                <TableCell>Qiskit Aer</TableCell>
+                <TableCell>0.12.0</TableCell>
+                <TableCell>High-performance quantum circuit simulation</TableCell>
+              </TableRow>
+            </TableBody>
+          </Table>
+        </TabsContent>
+        
+        <TabsContent value="organization" className="p-4">
+          <h2 className="text-2xl font-semibold mb-4">4. Organization and Responsibilities</h2>
+          <p className="mb-4">
+            This section defines the organization and responsibilities for the verification activities.
+          </p>
+          
+          <h3 className="text-xl font-semibold mb-2">4.1 Verification Team</h3>
+          <p className="mb-4">
+            The verification team consists of the following roles:
+          </p>
+          <Table>
+            <TableHeader>
+              <TableRow>
+                <TableHead>Role</TableHead>
+                <TableHead>Responsibilities</TableHead>
+              </TableRow>
+            </TableHeader>
+            <TableBody>
+              <TableRow>
+                <TableCell>Verification Lead</TableCell>
+                <TableCell>Overall verification strategy, review and approval</TableCell>
+              </TableRow>
+              <TableRow>
+                <TableCell>Formal Methods Specialist</TableCell>
+                <TableCell>Verification methodology, formal verification techniques</TableCell>
+              </TableRow>
+              <TableRow>
+                <TableCell>Certification Specialist</TableCell>
+                <TableCell>Standards compliance, certification requirements</TableCell>
+              </TableRow>
+              <TableRow>
+                <TableCell>Tool Qualification Engineer</TableCell>
+                <TableCell>Tool qualification activities, tool verification</TableCell>
+              </TableRow>
+              <TableRow>
+                <TableCell>Quantum Algorithm Engineer</TableCell>
+                <TableCell>Algorithm implementation, verification support</TableCell>
+              </TableRow>
+              <TableRow>
+                <TableCell>Documentation Specialist</TableCell>
+                <TableCell>Document management, template maintenance</TableCell>
+              </TableRow>
+            </TableBody>
+          </Table>
+        </TabsContent>
+        
+        <TabsContent value="schedule" className="p-4">
+          <h2 className="text-2xl font-semibold mb-4">5. Schedule and Resources</h2>
+          <p className="mb-4">
+            This section defines the schedule and resources for the verification activities.
+          </p>
+          
+          <h3 className="text-xl font-semibold mb-2">5.1 Schedule</h3>
+          <p className="mb-4">
+            The verification activities will be conducted according to the following schedule:
+          </p>
+          <Table>
+            <TableHeader>
+              <TableRow>
+                <TableHead>Milestone</TableHead>
+                <TableHead>Target Date</TableHead>
+                <TableHead>Deliverables</TableHead>
+              </TableRow>
+            </TableHeader>
+            <TableBody>
+              <TableRow>
+                <TableCell>Verification Plan Approved</TableCell>
+                <TableCell>Q3 2025</TableCell>
+                <TableCell>Master Verification Plan</TableCell>
+              </TableRow>
+              <TableRow>
+                <TableCell>Verification Framework Complete</TableCell>
+                <TableCell>Q4 2025</TableCell>
+                <TableCell>Verification Framework</TableCell>
+              </TableRow>
+              <TableRow>
+                <TableCell>Tool Qualification Complete</TableCell>
+                <TableCell>Q1 2026</TableCell>
+                <TableCell>Tool Qualification Plan</TableCell>
+              </TableRow>
+              <TableRow>
+                <TableCell>Algorithm Verification Complete</TableCell>
+                <TableCell>Q2 2026</TableCell>
+                <TableCell>Verification Reports</TableCell>
+              </TableRow>
+              <TableRow>
+                <TableCell>Certification Submission</TableCell>
+                <TableCell>Q3 2026</TableCell>
+                <TableCell>Complete Documentation Package</TableCell>
+              </TableRow>
+            </TableBody>
+          </Table>
+          
+          <h3 className="text-xl font-semibold mb-2">5.2 Resources</h3>
+          <p className="mb-4">
+            The following resources are required for the verification activities:
+          </p>
+          <ul className="list-disc pl-6 mb-4">
+            <li>Quantum computing resources</li>
+            <li>Verification tools and software</li>
+            <li>Qualified personnel</li>
+            <li>Documentation templates</li>
+            <li>Access to relevant standards and guidelines</li>
+          </ul>
+        </TabsContent>
+        
+        <TabsContent value="aerospace-system-design" className="p-4">
+          <h2 className="text-2xl font-semibold mb-4">Aerospace System Design Layer Documentation</h2>
+          <p className="mb-4">
+            The Aerospace System Design Layer Documentation provides comprehensive documentation for the Aerospace System Design application layer. It includes detailed descriptions of the architecture, components, and processes involved in the design and optimization of aerospace systems using quantum computing.
+          </p>
+        </TabsContent>
+        
+        <TabsContent value="quantum-machine-learning" className="p-4">
+          <h2 className="text-2xl font-semibold mb-4">Quantum Machine Learning Layer Documentation</h2>
+          <p className="mb-4">
+            The Quantum Machine Learning Layer Documentation provides comprehensive documentation for the Quantum Machine Learning application layer. It includes detailed descriptions of the algorithms, models, and processes involved in applying quantum machine learning to aerospace applications.
+          </p>
+        </TabsContent>
+        
+        <TabsContent value="quantum-optimization" className="p-4">
+          <h2 className="text-2xl font-semibold mb-4">Quantum Optimization Layer Documentation</h2>
+          <p className="mb-4">
+            The Quantum Optimization Layer Documentation provides comprehensive documentation for the Quantum Optimization application layer. It includes detailed descriptions of the algorithms, techniques, and processes involved in optimizing aerospace systems using quantum computing.
+          </p>
+        </TabsContent>
+        
+        <TabsContent value="quantum-simulation" className="p-4">
+          <h2 className="text-2xl font-semibold mb-4">Quantum Simulation Layer Documentation</h2>
+          <p className="mb-4">
+            The Quantum Simulation Layer Documentation provides comprehensive documentation for the Quantum Simulation application layer. It includes detailed descriptions of the simulation engines, models, and processes involved in simulating aerospace systems using quantum computing.
+          </p>
+        </TabsContent>
+        
+        <TabsContent value="quantum-chemistry" className="p-4">
+          <h2 className="text-2xl font-semibold mb-4">Quantum Chemistry Layer Documentation</h2>
+          <p className="mb-4">
+            The Quantum Chemistry Layer Documentation provides comprehensive documentation for the Quantum Chemistry application layer. It includes detailed descriptions of the molecular modeling tools, algorithms, and processes involved in developing new aerospace materials using quantum computing.
+          </p>
+        </TabsContent>
       </Tabs>
       
       <div className="mt-8 text-sm text-gray-600 border-t border-gray-200 pt-4">

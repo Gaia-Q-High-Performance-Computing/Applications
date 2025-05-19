@@ -494,6 +494,41 @@ export default function DocumentManagementSystem() {
             </Card>
           </div>
         </TabsContent>
+        
+        <TabsContent value="aerospace-system-design" className="p-4">
+          <h2 className="text-2xl font-semibold mb-4">Aerospace System Design Layer Documentation</h2>
+          <p className="mb-4">
+            The Aerospace System Design Layer Documentation provides comprehensive documentation for the Aerospace System Design application layer. It includes detailed descriptions of the architecture, components, and processes involved in the design and optimization of aerospace systems using quantum computing.
+          </p>
+        </TabsContent>
+        
+        <TabsContent value="quantum-machine-learning" className="p-4">
+          <h2 className="text-2xl font-semibold mb-4">Quantum Machine Learning Layer Documentation</h2>
+          <p className="mb-4">
+            The Quantum Machine Learning Layer Documentation provides comprehensive documentation for the Quantum Machine Learning application layer. It includes detailed descriptions of the algorithms, models, and processes involved in applying quantum machine learning to aerospace applications.
+          </p>
+        </TabsContent>
+        
+        <TabsContent value="quantum-optimization" className="p-4">
+          <h2 className="text-2xl font-semibold mb-4">Quantum Optimization Layer Documentation</h2>
+          <p className="mb-4">
+            The Quantum Optimization Layer Documentation provides comprehensive documentation for the Quantum Optimization application layer. It includes detailed descriptions of the algorithms, techniques, and processes involved in optimizing aerospace systems using quantum computing.
+          </p>
+        </TabsContent>
+        
+        <TabsContent value="quantum-simulation" className="p-4">
+          <h2 className="text-2xl font-semibold mb-4">Quantum Simulation Layer Documentation</h2>
+          <p className="mb-4">
+            The Quantum Simulation Layer Documentation provides comprehensive documentation for the Quantum Simulation application layer. It includes detailed descriptions of the simulation engines, models, and processes involved in simulating aerospace systems using quantum computing.
+          </p>
+        </TabsContent>
+        
+        <TabsContent value="quantum-chemistry" className="p-4">
+          <h2 className="text-2xl font-semibold mb-4">Quantum Chemistry Layer Documentation</h2>
+          <p className="mb-4">
+            The Quantum Chemistry Layer Documentation provides comprehensive documentation for the Quantum Chemistry application layer. It includes detailed descriptions of the molecular modeling tools, algorithms, and processes involved in developing new aerospace materials using quantum computing.
+          </p>
+        </TabsContent>
       </Tabs>
       
       <div className="mt-8 text-sm text-gray-600 border-t border-gray-200 pt-4">
