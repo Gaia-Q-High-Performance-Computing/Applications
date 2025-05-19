@@ -314,6 +314,3 @@ The integration of the BB84 QKD protocol with DIKE-Class traceability provides a
 
 ---
 
-**Ready for direct integration or further refinement.**  
-Let me know if you need this version in YAML, in an .md file, or with any additional cross-references/mermaid diagrams!
-```
