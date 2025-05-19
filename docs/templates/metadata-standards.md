@@ -129,6 +129,126 @@ export default function MetadataStandards() {
           </TableRow>
         </TableBody>
       </Table>
+
+      <h2 className="text-2xl font-semibold mb-4">5. Aerospace System Design Layer Documentation</h2>
+      
+      <Table>
+        <TableHeader>
+          <TableRow>
+            <TableHead>Document Type</TableHead>
+            <TableHead>Type Code</TableHead>
+            <TableHead>Example InfoCode</TableHead>
+          </TableRow>
+        </TableHeader>
+        <TableBody>
+          <TableRow>
+            <TableCell>Aerospace System Design Plan</TableCell>
+            <TableCell>ASDP</TableCell>
+            <TableCell>QAO-ASDP-2025-AMP360Q</TableCell>
+          </TableRow>
+          <TableRow>
+            <TableCell>Aerospace System Design Report</TableCell>
+            <TableCell>ASDR</TableCell>
+            <TableCell>QAO-ASDR-2025-AMP360Q</TableCell>
+          </TableRow>
+        </TableBody>
+      </Table>
+
+      <h2 className="text-2xl font-semibold mb-4">6. Quantum Machine Learning Layer Documentation</h2>
+      
+      <Table>
+        <TableHeader>
+          <TableRow>
+            <TableHead>Document Type</TableHead>
+            <TableHead>Type Code</TableHead>
+            <TableHead>Example InfoCode</TableHead>
+          </TableRow>
+        </TableHeader>
+        <TableBody>
+          <TableRow>
+            <TableCell>Quantum Machine Learning Plan</TableCell>
+            <TableCell>QMLP</TableCell>
+            <TableCell>QAO-QMLP-2025-AMP360Q</TableCell>
+          </TableRow>
+          <TableRow>
+            <TableCell>Quantum Machine Learning Report</TableCell>
+            <TableCell>QMLR</TableCell>
+            <TableCell>QAO-QMLR-2025-AMP360Q</TableCell>
+          </TableRow>
+        </TableBody>
+      </Table>
+
+      <h2 className="text-2xl font-semibold mb-4">7. Quantum Optimization Layer Documentation</h2>
+      
+      <Table>
+        <TableHeader>
+          <TableRow>
+            <TableHead>Document Type</TableHead>
+            <TableHead>Type Code</TableHead>
+            <TableHead>Example InfoCode</TableHead>
+          </TableRow>
+        </TableHeader>
+        <TableBody>
+          <TableRow>
+            <TableCell>Quantum Optimization Plan</TableCell>
+            <TableCell>QOP</TableCell>
+            <TableCell>QAO-QOP-2025-AMP360Q</TableCell>
+          </TableRow>
+          <TableRow>
+            <TableCell>Quantum Optimization Report</TableCell>
+            <TableCell>QOR</TableCell>
+            <TableCell>QAO-QOR-2025-AMP360Q</TableCell>
+          </TableRow>
+        </TableBody>
+      </Table>
+
+      <h2 className="text-2xl font-semibold mb-4">8. Quantum Simulation Layer Documentation</h2>
+      
+      <Table>
+        <TableHeader>
+          <TableRow>
+            <TableHead>Document Type</TableHead>
+            <TableHead>Type Code</TableHead>
+            <TableHead>Example InfoCode</TableHead>
+          </TableRow>
+        </TableHeader>
+        <TableBody>
+          <TableRow>
+            <TableCell>Quantum Simulation Plan</TableCell>
+            <TableCell>QSP</TableCell>
+            <TableCell>QAO-QSP-2025-AMP360Q</TableCell>
+          </TableRow>
+          <TableRow>
+            <TableCell>Quantum Simulation Report</TableCell>
+            <TableCell>QSR</TableCell>
+            <TableCell>QAO-QSR-2025-AMP360Q</TableCell>
+          </TableRow>
+        </TableBody>
+      </Table>
+
+      <h2 className="text-2xl font-semibold mb-4">9. Quantum Chemistry Layer Documentation</h2>
+      
+      <Table>
+        <TableHeader>
+          <TableRow>
+            <TableHead>Document Type</TableHead>
+            <TableHead>Type Code</TableHead>
+            <TableHead>Example InfoCode</TableHead>
+          </TableRow>
+        </TableHeader>
+        <TableBody>
+          <TableRow>
+            <TableCell>Quantum Chemistry Plan</TableCell>
+            <TableCell>QCP</TableCell>
+            <TableCell>QAO-QCP-2025-AMP360Q</TableCell>
+          </TableRow>
+          <TableRow>
+            <TableCell>Quantum Chemistry Report</TableCell>
+            <TableCell>QCR</TableCell>
+            <TableCell>QAO-QCR-2025-AMP360Q</TableCell>
+          </TableRow>
+        </TableBody>
+      </Table>
     </div>
   );
 }

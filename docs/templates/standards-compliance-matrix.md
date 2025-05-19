@@ -67,8 +67,7 @@ export default function StandardsComplianceMatrixTemplate() {
               <TableRow>
                 <TableCell>DO-330</TableCell>
                 <TableCell>Software Tool Qualification Considerations</TableCell>
-                <TableCell>Verification tools</TableCell>
-              </TableRow>
+                <TableCell>Verification tools</TableRow>
               <TableRow>
                 <TableCell>EASA CS-25</TableCell>
                 <TableCell>Certification Specifications for Large Aeroplanes</TableCell>
@@ -131,7 +130,199 @@ export default function StandardsComplianceMatrixTemplate() {
           </Table>
         </TabsContent>
         
-        {/* Additional tab content would be implemented similarly */}
+        <TabsContent value="arp4754a" className="p-4">
+          <h2 className="text-2xl font-semibold mb-4">3. ARP4754A Compliance Matrix</h2>
+          
+          <Table>
+            <TableHeader>
+              <TableRow>
+                <TableHead>ARP4754A Objective</TableHead>
+                <TableHead>Requirement</TableHead>
+                <TableHead>Verification Activity</TableHead>
+                <TableHead>Evidence</TableHead>
+                <TableHead>Status</TableHead>
+              </TableRow>
+            </TableHeader>
+            <TableBody>
+              <TableRow>
+                <TableCell>Table 4.1 (1)</TableCell>
+                <TableCell>System Requirements Process</TableCell>
+                <TableCell>System Requirements Specification</TableCell>
+                <TableCell>QAO-SRS-2025-AMP360Q</TableCell>
+                <TableCell>In Progress</TableCell>
+              </TableRow>
+              <TableRow>
+                <TableCell>Table 4.2 (1)</TableCell>
+                <TableCell>System Design Process</TableCell>
+                <TableCell>System Design Specification</TableCell>
+                <TableCell>QAO-SDS-2025-AMP360Q</TableCell>
+                <TableCell>In Progress</TableCell>
+              </TableRow>
+              <TableRow>
+                <TableCell>Table 4.3 (1)</TableCell>
+                <TableCell>System Verification Process</TableCell>
+                <TableCell>System Verification Plan</TableCell>
+                <TableCell>QAO-SVP-2025-AMP360Q</TableCell>
+                <TableCell>In Progress</TableCell>
+              </TableRow>
+              <TableRow>
+                <TableCell>Table 4.4 (1)</TableCell>
+                <TableCell>System Validation Process</TableCell>
+                <TableCell>System Validation Plan</TableCell>
+                <TableCell>QAO-SVP-2025-AMP360Q</TableCell>
+                <TableCell>Planned</TableCell>
+              </TableRow>
+              <TableRow>
+                <TableCell>Table 4.5 (1)</TableCell>
+                <TableCell>System Configuration Management</TableCell>
+                <TableCell>Configuration Management Plan</TableCell>
+                <TableCell>QAO-CM-2025-AMP360Q</TableCell>
+                <TableCell>Planned</TableCell>
+              </TableRow>
+            </TableBody>
+          </Table>
+        </TabsContent>
+        
+        <TabsContent value="do330" className="p-4">
+          <h2 className="text-2xl font-semibold mb-4">4. DO-330 Compliance Matrix</h2>
+          
+          <Table>
+            <TableHeader>
+              <TableRow>
+                <TableHead>DO-330 Objective</TableHead>
+                <TableHead>Requirement</TableHead>
+                <TableHead>Verification Activity</TableHead>
+                <TableHead>Evidence</TableHead>
+                <TableHead>Status</TableHead>
+              </TableRow>
+            </TableHeader>
+            <TableBody>
+              <TableRow>
+                <TableCell>Table 5.1 (1)</TableCell>
+                <TableCell>Tool Qualification Process</TableCell>
+                <TableCell>Tool Qualification Plan</TableCell>
+                <TableCell>QAO-TQP-2025-AMP360Q</TableCell>
+                <TableCell>In Progress</TableCell>
+              </TableRow>
+              <TableRow>
+                <TableCell>Table 5.2 (1)</TableCell>
+                <TableCell>Tool Requirements Process</TableCell>
+                <TableCell>Tool Requirements Specification</TableCell>
+                <TableCell>QAO-TRS-2025-AMP360Q</TableCell>
+                <TableCell>In Progress</TableCell>
+              </TableRow>
+              <TableRow>
+                <TableCell>Table 5.3 (1)</TableCell>
+                <TableCell>Tool Design Process</TableCell>
+                <TableCell>Tool Design Specification</TableCell>
+                <TableCell>QAO-TDS-2025-AMP360Q</TableCell>
+                <TableCell>In Progress</TableCell>
+              </TableRow>
+              <TableRow>
+                <TableCell>Table 5.4 (1)</TableCell>
+                <TableCell>Tool Verification Process</TableCell>
+                <TableCell>Tool Verification Plan</TableCell>
+                <TableCell>QAO-TVP-2025-AMP360Q</TableCell>
+                <TableCell>Planned</TableCell>
+              </TableRow>
+              <TableRow>
+                <TableCell>Table 5.5 (1)</TableCell>
+                <TableCell>Tool Validation Process</TableCell>
+                <TableCell>Tool Validation Plan</TableCell>
+                <TableCell>QAO-TVP-2025-AMP360Q</TableCell>
+                <TableCell>Planned</TableCell>
+              </TableRow>
+            </TableBody>
+          </Table>
+        </TabsContent>
+        
+        <TabsContent value="easa" className="p-4">
+          <h2 className="text-2xl font-semibold mb-4">5. EASA CS-25 Compliance Matrix</h2>
+          
+          <Table>
+            <TableHeader>
+              <TableRow>
+                <TableHead>EASA CS-25 Objective</TableHead>
+                <TableHead>Requirement</TableHead>
+                <TableHead>Verification Activity</TableHead>
+                <TableHead>Evidence</TableHead>
+                <TableHead>Status</TableHead>
+              </TableRow>
+            </TableHeader>
+            <TableBody>
+              <TableRow>
+                <TableCell>CS 25.1309 (a)</TableCell>
+                <TableCell>System Safety Assessment</TableCell>
+                <TableCell>System Safety Assessment Report</TableCell>
+                <TableCell>QAO-SSA-2025-AMP360Q</TableCell>
+                <TableCell>In Progress</TableCell>
+              </TableRow>
+              <TableRow>
+                <TableCell>CS 25.1309 (b)</TableCell>
+                <TableCell>System Design Analysis</TableCell>
+                <TableCell>System Design Analysis Report</TableCell>
+                <TableCell>QAO-SDA-2025-AMP360Q</TableCell>
+                <TableCell>In Progress</TableCell>
+              </TableRow>
+              <TableRow>
+                <TableCell>CS 25.1309 (c)</TableCell>
+                <TableCell>System Verification</TableCell>
+                <TableCell>System Verification Report</TableCell>
+                <TableCell>QAO-SVR-2025-AMP360Q</TableCell>
+                <TableCell>In Progress</TableCell>
+              </TableRow>
+              <TableRow>
+                <TableCell>CS 25.1309 (d)</TableCell>
+                <TableCell>System Validation</TableCell>
+                <TableCell>System Validation Report</TableCell>
+                <TableCell>QAO-SVR-2025-AMP360Q</TableCell>
+                <TableCell>Planned</TableCell>
+              </TableRow>
+              <TableRow>
+                <TableCell>CS 25.1309 (e)</TableCell>
+                <TableCell>System Configuration Management</TableCell>
+                <TableCell>Configuration Management Plan</TableCell>
+                <TableCell>QAO-CM-2025-AMP360Q</TableCell>
+                <TableCell>Planned</TableCell>
+              </TableRow>
+            </TableBody>
+          </Table>
+        </TabsContent>
+        
+        <TabsContent value="aerospace-system-design" className="p-4">
+          <h2 className="text-2xl font-semibold mb-4">Aerospace System Design Layer Documentation</h2>
+          <p className="mb-4">
+            The Aerospace System Design Layer Documentation provides comprehensive documentation for the Aerospace System Design application layer. It includes detailed descriptions of the architecture, components, and processes involved in the design and optimization of aerospace systems using quantum computing.
+          </p>
+        </TabsContent>
+        
+        <TabsContent value="quantum-machine-learning" className="p-4">
+          <h2 className="text-2xl font-semibold mb-4">Quantum Machine Learning Layer Documentation</h2>
+          <p className="mb-4">
+            The Quantum Machine Learning Layer Documentation provides comprehensive documentation for the Quantum Machine Learning application layer. It includes detailed descriptions of the algorithms, models, and processes involved in applying quantum machine learning to aerospace applications.
+          </p>
+        </TabsContent>
+        
+        <TabsContent value="quantum-optimization" className="p-4">
+          <h2 className="text-2xl font-semibold mb-4">Quantum Optimization Layer Documentation</h2>
+          <p className="mb-4">
+            The Quantum Optimization Layer Documentation provides comprehensive documentation for the Quantum Optimization application layer. It includes detailed descriptions of the algorithms, techniques, and processes involved in optimizing aerospace systems using quantum computing.
+          </p>
+        </TabsContent>
+        
+        <TabsContent value="quantum-simulation" className="p-4">
+          <h2 className="text-2xl font-semibold mb-4">Quantum Simulation Layer Documentation</h2>
+          <p className="mb-4">
+            The Quantum Simulation Layer Documentation provides comprehensive documentation for the Quantum Simulation application layer. It includes detailed descriptions of the simulation engines, models, and processes involved in simulating aerospace systems using quantum computing.
+          </p>
+        </TabsContent>
+        
+        <TabsContent value="quantum-chemistry" className="p-4">
+          <h2 className="text-2xl font-semibold mb-4">Quantum Chemistry Layer Documentation</h2>
+          <p className="mb-4">
+            The Quantum Chemistry Layer Documentation provides comprehensive documentation for the Quantum Chemistry application layer. It includes detailed descriptions of the molecular modeling tools, algorithms, and processes involved in developing new aerospace materials using quantum computing.
+          </p>
+        </TabsContent>
       </Tabs>
       
       <div className="mt-8 text-sm text-gray-600 border-t border-gray-200 pt-4">

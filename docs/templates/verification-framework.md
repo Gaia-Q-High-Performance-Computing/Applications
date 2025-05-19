@@ -74,6 +74,65 @@ export default function VerificationFrameworkTemplate() {
           </Card>
         </TabsContent>
         
+        <TabsContent value="architecture" className="p-4">
+          <h2 className="text-2xl font-semibold mb-4">2. Architecture</h2>
+          
+          <Card className="mb-6">
+            <CardHeader>
+              <CardTitle>2.1 Aerospace System Design Layer Documentation</CardTitle>
+            </CardHeader>
+            <CardContent>
+              <p>
+                This section provides documentation for the Aerospace System Design Layer, detailing the architecture and design considerations for integrating quantum algorithms into aerospace systems.
+              </p>
+            </CardContent>
+          </Card>
+          
+          <Card className="mb-6">
+            <CardHeader>
+              <CardTitle>2.2 Quantum Machine Learning Layer Documentation</CardTitle>
+            </CardHeader>
+            <CardContent>
+              <p>
+                This section provides documentation for the Quantum Machine Learning Layer, detailing the architecture and design considerations for implementing quantum machine learning algorithms.
+              </p>
+            </CardContent>
+          </Card>
+          
+          <Card className="mb-6">
+            <CardHeader>
+              <CardTitle>2.3 Quantum Optimization Layer Documentation</CardTitle>
+            </CardHeader>
+            <CardContent>
+              <p>
+                This section provides documentation for the Quantum Optimization Layer, detailing the architecture and design considerations for implementing quantum optimization algorithms.
+              </p>
+            </CardContent>
+          </Card>
+          
+          <Card className="mb-6">
+            <CardHeader>
+              <CardTitle>2.4 Quantum Simulation Layer Documentation</CardTitle>
+            </CardHeader>
+            <CardContent>
+              <p>
+                This section provides documentation for the Quantum Simulation Layer, detailing the architecture and design considerations for implementing quantum simulation algorithms.
+              </p>
+            </CardContent>
+          </Card>
+          
+          <Card>
+            <CardHeader>
+              <CardTitle>2.5 Quantum Chemistry Layer Documentation</CardTitle>
+            </CardHeader>
+            <CardContent>
+              <p>
+                This section provides documentation for the Quantum Chemistry Layer, detailing the architecture and design considerations for implementing quantum chemistry algorithms.
+              </p>
+            </CardContent>
+          </Card>
+        </TabsContent>
+        
         {/* Additional tab content would be implemented similarly */}
       </Tabs>
       

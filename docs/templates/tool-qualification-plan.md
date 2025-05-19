@@ -123,7 +123,81 @@ export default function ToolQualificationPlanTemplate() {
           </Table>
         </TabsContent>
         
-        {/* Additional tab content would be implemented similarly */}
+        <TabsContent value="criteria" className="p-4">
+          <h2 className="text-2xl font-semibold mb-4">3. Qualification Criteria</h2>
+          <p className="mb-4">
+            The qualification criteria for each tool are based on the tool's category and its impact on the verification process. The criteria include:
+          </p>
+          <ul className="list-disc pl-6 mb-4">
+            <li>Tool functionality and performance</li>
+            <li>Tool development process and documentation</li>
+            <li>Tool verification and validation activities</li>
+            <li>Tool configuration management</li>
+            <li>Tool user training and support</li>
+          </ul>
+        </TabsContent>
+        
+        <TabsContent value="process" className="p-4">
+          <h2 className="text-2xl font-semibold mb-4">4. Qualification Process</h2>
+          <p className="mb-4">
+            The qualification process for each tool involves the following steps:
+          </p>
+          <ul className="list-decimal pl-6 mb-4">
+            <li>Tool identification and categorization</li>
+            <li>Tool qualification planning</li>
+            <li>Tool qualification activities</li>
+            <li>Tool qualification evidence collection</li>
+            <li>Tool qualification review and approval</li>
+          </ul>
+        </TabsContent>
+        
+        <TabsContent value="evidence" className="p-4">
+          <h2 className="text-2xl font-semibold mb-4">5. Evidence</h2>
+          <p className="mb-4">
+            The evidence required for tool qualification includes:
+          </p>
+          <ul className="list-disc pl-6 mb-4">
+            <li>Tool qualification plan</li>
+            <li>Tool qualification criteria</li>
+            <li>Tool qualification activities and results</li>
+            <li>Tool qualification review and approval records</li>
+          </ul>
+        </TabsContent>
+        
+        <TabsContent value="aerospace-system-design" className="p-4">
+          <h2 className="text-2xl font-semibold mb-4">6. Aerospace System Design Layer Documentation</h2>
+          <p className="mb-4">
+            This section provides documentation for the Aerospace System Design Layer, including the design, development, and verification of aerospace systems.
+          </p>
+        </TabsContent>
+        
+        <TabsContent value="quantum-machine-learning" className="p-4">
+          <h2 className="text-2xl font-semibold mb-4">7. Quantum Machine Learning Layer Documentation</h2>
+          <p className="mb-4">
+            This section provides documentation for the Quantum Machine Learning Layer, including the design, development, and verification of quantum machine learning algorithms and models.
+          </p>
+        </TabsContent>
+        
+        <TabsContent value="quantum-optimization" className="p-4">
+          <h2 className="text-2xl font-semibold mb-4">8. Quantum Optimization Layer Documentation</h2>
+          <p className="mb-4">
+            This section provides documentation for the Quantum Optimization Layer, including the design, development, and verification of quantum optimization algorithms and models.
+          </p>
+        </TabsContent>
+        
+        <TabsContent value="quantum-simulation" className="p-4">
+          <h2 className="text-2xl font-semibold mb-4">9. Quantum Simulation Layer Documentation</h2>
+          <p className="mb-4">
+            This section provides documentation for the Quantum Simulation Layer, including the design, development, and verification of quantum simulation algorithms and models.
+          </p>
+        </TabsContent>
+        
+        <TabsContent value="quantum-chemistry" className="p-4">
+          <h2 className="text-2xl font-semibold mb-4">10. Quantum Chemistry Layer Documentation</h2>
+          <p className="mb-4">
+            This section provides documentation for the Quantum Chemistry Layer, including the design, development, and verification of quantum chemistry algorithms and models.
+          </p>
+        </TabsContent>
       </Tabs>
       
       <div className="mt-8 text-sm text-gray-600 border-t border-gray-200 pt-4">
