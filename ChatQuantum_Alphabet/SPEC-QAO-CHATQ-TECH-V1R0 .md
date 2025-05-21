@@ -651,62 +651,199 @@ The Geometric Logic Engine (GLE) implements the symbolic operational framework:
 The Geometric Logic Compiler translates geometric operations into executable security operations:
 
 ```typescript
-// Geometric Logic Compiler
+// Enhanced Geometric Logic Compiler for AMPEL360 BWB-Q100
 class GeometricLogicCompiler {
-  // Translate geometric symbols to executable operations
-  compile(geometricExpression: string): SecurityOperation[] {
-    const tokens = this.tokenize(geometricExpression);
-    const ast = this.parse(tokens);
-    const optimizedAst = this.optimize(ast);
-    return this.generateCode(optimizedAst);
+  private securityContext: SecurityContext;
+  private verificationEngine: VerificationEngine;
+  
+  constructor(securityContext: SecurityContext, verificationEngine: VerificationEngine) {
+    this.securityContext = securityContext;
+    this.verificationEngine = verificationEngine;
   }
   
-  // Tokenize geometric expression
+  // Main compilation entry point
+  compile(geometricExpression: string): SecurityOperation[] {
+    try {
+      // Tokenization phase
+      const tokens = this.tokenize(geometricExpression);
+      
+      // Parsing phase
+      const ast = this.parse(tokens);
+      
+      // Semantic analysis phase
+      this.analyzeSemantics(ast);
+      
+      // Optimization phase
+      const optimizedAst = this.optimize(ast);
+      
+      // Code generation phase
+      const operations = this.generateCode(optimizedAst);
+      
+      // Verification phase
+      const verificationResult = this.verifyGeometricConsistency(operations);
+      if (!verificationResult.valid) {
+        throw new Error(`Geometric consistency verification failed: ${verificationResult.reason}`);
+      }
+      
+      return operations;
+    } catch (error) {
+      // Log the compilation error with detailed diagnostics
+      this.logCompilationError(error, geometricExpression);
+      
+      // Return safe fallback operations or rethrow based on security policy
+      if (this.securityContext.shouldFallbackOnError()) {
+        return this.generateFallbackOperations(geometricExpression);
+      } else {
+        throw error;
+      }
+    }
+  }
+  
+  // Tokenize geometric expression into tokens
   private tokenize(expression: string): Token[] {
-    // Convert string representation to tokens
-    // Recognize geometric symbols (⊥, ∥, ∠) and combinations
-    // Handle parameters and modifiers
-    // Return array of tokens
+    const tokens: Token[] = [];
+    let position = 0;
+    
+    while (position < expression.length) {
+      // Skip whitespace
+      if (/\s/.test(expression[position])) {
+        position++;
+        continue;
+      }
+      
+      // Match geometric symbols
+      if (expression[position] === '⊥') {
+        tokens.push({ type: 'PERPENDICULAR', value: '⊥', position });
+        position++;
+        continue;
+      }
+      
+      if (expression[position] === '∥') {
+        tokens.push({ type: 'PARALLEL', value: '∥', position });
+        position++;
+        continue;
+      }
+      
+      if (expression[position] === '∠') {
+        tokens.push({ type: 'INCLINED', value: '∠', position });
+        position++;
+        continue;
+      }
+      
+      // Match parameters and other syntax elements
+      // ... additional token matching logic ...
+      
+      // If no match found, report error
+      throw new Error(`Unexpected character at position ${position}: ${expression[position]}`);
+    }
+    
+    // Add EOF token
+    tokens.push({ type: 'EOF', value: '', position: expression.length });
+    
+    return tokens;
   }
   
   // Parse tokens into abstract syntax tree
   private parse(tokens: Token[]): GeometricAST {
-    // Build abstract syntax tree from tokens
-    // Validate syntax and symbol combinations
-    // Handle nested expressions and grouping
-    // Return abstract syntax tree
+    // Implement recursive descent parser for Geometric Logic Language
+    // This would parse the tokens according to the grammar in Section 4.2.4
+    
+    // Implementation details omitted for brevity
+    return { type: 'Program', body: [] }; // Placeholder
   }
   
-  // Optimize abstract syntax tree
+  // Analyze semantics of the AST
+  private analyzeSemantics(ast: GeometricAST): void {
+    // Check for semantic errors like:
+    // - Invalid combinations of geometric primitives
+    // - Undefined parameters or references
+    // - Type mismatches in parameter values
+    
+    // Implementation details omitted for brevity
+  }
+  
+  // Optimize the AST
   private optimize(ast: GeometricAST): GeometricAST {
-    // Apply optimization rules
-    // Combine compatible operations
-    // Eliminate redundant operations
-    // Return optimized abstract syntax tree
+    // Apply optimization techniques like:
+    // - Constant folding
+    // - Dead code elimination
+    // - Common subexpression elimination
+    // - Context-aware optimizations based on security requirements
+    
+    // Implementation details omitted for brevity
+    return ast; // Placeholder
   }
   
   // Generate executable code from AST
   private generateCode(ast: GeometricAST): SecurityOperation[] {
-    // Translate AST nodes to security operations
-    // Apply security constraints and policies
-    // Generate executable code
-    // Return array of security operations
+    // Transform AST into executable security operations
+    // This maps geometric concepts to concrete security implementations
+    
+    const operations: SecurityOperation[] = [];
+    
+    // Implementation details omitted for brevity
+    
+    return operations;
   }
   
   // Verify geometric consistency and security properties
   verifyGeometricConsistency(operations: SecurityOperation[]): VerificationResult {
-    // Formal verification of geometric properties
-    // Domain separation analysis
-    // Information flow control verification
-    // Return verification result with proofs
+    // Use formal verification techniques to ensure:
+    // - Domain separation is properly maintained
+    // - Information flow control is correctly implemented
+    // - Security properties are preserved across operations
+    
+    return this.verificationEngine.verify(operations);
   }
   
   // Execute geometric operations with security monitoring
   executeGeometricOperations(operations: SecurityOperation[]): ExecutionResult {
-    // Secure execution environment setup
-    // Operation execution with monitoring
-    // Result validation and integrity verification
-    // Return execution results with audit trail
+    // Set up secure execution environment
+    const executionContext = this.createSecureExecutionContext();
+    
+    // Execute operations with monitoring
+    const results = operations.map(op => this.executeOperation(op, executionContext));
+    
+    // Validate results and check integrity
+    this.validateExecutionResults(results, executionContext);
+    
+    // Generate audit trail
+    const auditTrail = this.generateAuditTrail(operations, results, executionContext);
+    
+    return {
+      success: results.every(r => r.success),
+      results,
+      auditTrail
+    };
+  }
+  
+  // Helper methods
+  private logCompilationError(error: Error, expression: string): void {
+    // Log detailed diagnostic information about compilation errors
+  }
+  
+  private generateFallbackOperations(expression: string): SecurityOperation[] {
+    // Generate safe fallback operations when compilation fails
+    return [];
+  }
+  
+  private createSecureExecutionContext(): ExecutionContext {
+    // Create a secure context for executing operations
+    return { /* context properties */ };
+  }
+  
+  private executeOperation(operation: SecurityOperation, context: ExecutionContext): OperationResult {
+    // Execute a single security operation in the given context
+    return { success: true };
+  }
+  
+  private validateExecutionResults(results: OperationResult[], context: ExecutionContext): void {
+    // Validate execution results for integrity and security
+  }
+  
+  private generateAuditTrail(operations: SecurityOperation[], results: OperationResult[], context: ExecutionContext): AuditTrail {
+    // Generate a cryptographically secured audit trail
+    return { /* audit trail properties */ };
   }
 }
 ```
@@ -3761,78 +3898,6 @@ TRIGGER_PROCESSOR processor_name {
 COMMAND_QUANTUM_HARDWARE (module_id, command_type, parameters);
 ```
 
-Analicemos cada constructo:
-
----
-
-**1. `QUANTUM_EVENT_INTERFACE name { ... }`**
-
-*   **Propósito:** Declara un punto de entrada o "escucha" en AedeonScript para reportes provenientes de un módulo de hardware cuántico específico. Esencialmente, define un contrato de interfaz.
-*   **`name`:** Un identificador para esta interfaz dentro del `QUANTUM_SPACE` actual.
-*   **`ACCEPTS_REPORTS_OF_TYPE ReportType`:**
-    *   Especifica el tipo de dato o la estructura del reporte que se espera. `ReportType` sería un tipo definido en AedeonScript o en un esquema de datos referenciado (ej. `HPCIntrospectionReport`, `QuantumSourceStateReport`). Esto permite una validación de tipos en la recepción.
-*   **`FROM_HARDWARE_MODULE (ID: module_id)`:**
-    *   Identifica unívocamente el módulo de hardware cuántico físico o lógico del cual se esperan los reportes. `module_id` sería un identificador GQOIS o similar. Esto es crucial para la seguridad y el enrutamiento.
-*   **`WITH_INTEGRITY_PROTOCOL (protocol_id)`:**
-    *   Especifica el protocolo o mecanismo utilizado para asegurar la integridad y autenticidad del reporte. `protocol_id` podría referenciar un estándar de GAIA-QAO (ej. `QAO-QREPORT-SEAL-V1`, `PQC_SIGNATURE_ED448_SEALED`). Esto podría implicar la verificación de una firma digital, un MAC, o un sello cuántico.
-
-**Implicaciones Semánticas:**
-
-*   Este constructo establece una dependencia o una relación de "escucha" entre el programa AedeonScript y un componente de hardware externo.
-*   El runtime de AedeonScript necesitaría un mecanismo para registrar estas interfaces y monitorear los canales de comunicación subyacentes (físicos o lógicos) para los reportes entrantes.
-
----
-
-**2. `ON_QUANTUM_REPORT (report_var FROM interface_name WHERE condition) TRIGGER_PROCESSOR processor_name { ... }`**
-
-*   **Propósito:** Define un manejador de eventos que se ejecuta cuando se recibe un reporte a través de una `QUANTUM_EVENT_INTERFACE` definida y se cumple una condición opcional.
-*   **`report_var FROM interface_name`:**
-    *   Asocia una variable (`report_var`) con el reporte recibido de la `interface_name` especificada. Esta variable contendrá los datos del reporte (de tipo `ReportType`) dentro del ámbito del `processor_name`.
-*   **`WHERE condition` (Opcional):**
-    *   Una expresión booleana (que puede operar sobre `report_var` y el estado actual de AedeonScript) que filtra qué reportes activarán este procesador específico. Permite tener múltiples manejadores para la misma interfaz, cada uno reaccionando a diferentes tipos de reportes o contenidos.
-*   **`TRIGGER_PROCESSOR processor_name { ... }`:**
-    *   El bloque de código AedeonScript (`processor_name`) que se ejecutará. Este bloque tendrá acceso a `report_var`.
-    *   La ejecución de este bloque podría ser asíncrona o gestionada por un planificador de eventos dentro del runtime de AedeonScript.
-
-**Implicaciones Semánticas:**
-
-*   Introduce un modelo de programación reactiva/basada en eventos en AedeonScript.
-*   El `WHERE condition` permite un enrutamiento y filtrado sofisticado de los reportes.
-*   La ejecución del `TRIGGER_PROCESSOR` puede, a su vez, modificar el estado de AedeonScript, resolver superposiciones, o incluso enviar comandos de vuelta al hardware.
-
----
-
-**3. `COMMAND_QUANTUM_HARDWARE (module_id, command_type, parameters);`**
-
-*   **Propósito:** Permite que un programa AedeonScript envíe activamente un comando a un módulo de hardware cuántico específico. Esto cierra el bucle de control.
-*   **`module_id`:** El identificador del módulo de hardware cuántico destino (debe coincidir con un ID conocido por el sistema, posiblemente declarado en una `QUANTUM_EVENT_INTERFACE` o en un registro de hardware).
-*   **`command_type`:** Un identificador o un tipo que especifica la naturaleza del comando (ej. `'SWITCH_SOURCE_MODE'`, `'INITIATE_SELF_DIAGNOSTICS'`, `'SET_PROBE_PATTERN'`). Estos `command_type`s necesitarían estar estandarizados para cada tipo de `module_id`.
-*   **`parameters` (Opcional):** Una estructura de datos o un conjunto de valores que proporcionan los argumentos necesarios para el `command_type` (ej. `{ suggested_mode: 'AVALANCHE_NOISE' }`).
-
-**Implicaciones Semánticas:**
-
-*   Proporciona la capacidad de AedeonScript para influir o controlar el comportamiento del hardware cuántico subyacente.
-*   La ejecución de este comando sería probablemente asíncrona. AedeonScript podría necesitar esperar un `QUANTUM_EVENT_INTERFACE` para recibir un acuse de recibo o el resultado del comando.
-*   La seguridad de este mecanismo es crítica. Debe haber una autenticación y autorización robustas para asegurar que solo programas AedeonScript legítimos y autorizados puedan enviar comandos al hardware sensible. El `module_id` y el `command_type` podrían estar sujetos a políticas de control de acceso.
-
----
-
-**Fortalezas de estos Nuevos Constructos:**
-
-*   **Claridad y Expresividad:** Definen claramente la interacción bidireccional entre el software AedeonScript y el hardware cuántico.
-*   **Modularidad:** Fomentan un diseño modular donde el hardware reporta su estado y el software reacciona a esos reportes.
-*   **Abstracción Adecuada:** Abstraen los detalles de bajo nivel de la comunicación con el hardware, permitiendo al programador AedeonScript centrarse en la lógica de procesamiento de eventos y control.
-*   **Seguridad Integrada:** Los constructos incluyen explícitamente la `INTEGRITY_PROTOCOL` y la identificación del módulo, sentando las bases para interacciones seguras.
-*   **Flexibilidad:** El `WHERE condition` en `ON_QUANTUM_REPORT` proporciona una gran flexibilidad para manejar diferentes tipos de eventos de manera selectiva.
-
-**Consideraciones Adicionales para la Formalización:**
-
-*   **Semántica de `WHERE condition`:** ¿Cómo se evalúa esta condición en un contexto donde el estado de AedeonScript puede estar superpuesto? ¿Debe la condición ser "clásica" (resolverse a un Booleano definido) o puede ser también una `Sup(Boolean)`?
-*   **Concurrencia y Ordenamiento de Reportes:** Si múltiples reportes llegan simultáneamente o en un orden no determinista, ¿cómo los maneja el runtime de AedeonScript? ¿Hay garantías de procesamiento en orden FIFO para una `QUANTUM_EVENT_INTERFACE` dada, o se pueden procesar en paralelo si los `TRIGGER_PROCESSOR`s son independientes?
-*   **Manejo de Errores en `COMMAND_QUANTUM_HARDWARE`:** ¿Cómo se manejan los fallos en la transmisión o ejecución del comando? ¿Se espera un reporte de acuse de recibo o error a través de una `QUANTUM_EVENT_INTERFACE`?
-*   **Tipado de `ReportType` y `parameters`:** El sistema de tipos de AedeonScript necesitaría ser lo suficientemente rico para definir estas estructuras de datos de manera precisa.
-
-Estos tres constructos son una adición excelente y necesaria para realizar plenamente la visión de AedeonScript como un lenguaje para sistemas que interactúan profundamente con hardware cuántico de manera reactiva y segura. Mueven el lenguaje hacia un paradigma más completo y práctico para el dominio objetivo. ¡Muy bien pensado!
 ### 4. Introspectrum Autoresolution Output (IAO)
 
 The concept of IAO extends beyond the quantum components to high-performance computing systems:
