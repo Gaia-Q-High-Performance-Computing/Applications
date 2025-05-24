@@ -352,15 +352,6 @@ This project is licensed under the GAIA-QAO Proprietary License - see the [LICEN
 
 For questions or support, please contact the GAIA-QAO High Performance Computing team at [quantum@gaia-qao.org](mailto:quantum@gaia-qao.org).
 
-```plaintext
-
-<Actions>
-  <Action name="Create detailed documentation for Aerospace System Design layer" description="Develop comprehensive documentation for the Aerospace System Design application layer" />
-  <Action name="Create detailed documentation for Quantum Machine Learning layer" description="Develop comprehensive documentation for the QML application layer" />
-  <Action name="Create detailed documentation for Quantum Optimization layer" description="Develop comprehensive documentation for the Quantum Optimization application layer" />
-  <Action name="Create detailed documentation for Quantum Simulation layer" description="Develop comprehensive documentation for the Quantum Simulation application layer" />
-  <Action name="Create detailed documentation for Quantum Chemistry layer" description="Develop comprehensive documentation for the Quantum Chemistry application layer" />
-</Actions>
 
 ## Quantum Verification Documentation Structure Implementation
 
@@ -382,3 +373,11 @@ The Quantum Verification Documentation Structure provides a comprehensive framew
 - [Document Relationships and Traceability Guide](./docs/templates/document-relationships.md)
 - [Implementation Roadmap](./docs/templates/implementation-roadmap.md)
 - [Document Management System Guide](./docs/templates/document-management-system.md)
+
+  <Actions>
+  <Action name="Create detailed documentation for Aerospace System Design layer" description="Develop comprehensive documentation for the Aerospace System Design application layer" />
+  <Action name="Create detailed documentation for Quantum Machine Learning layer" description="Develop comprehensive documentation for the QML application layer" />
+  <Action name="Create detailed documentation for Quantum Optimization layer" description="Develop comprehensive documentation for the Quantum Optimization application layer" />
+  <Action name="Create detailed documentation for Quantum Simulation layer" description="Develop comprehensive documentation for the Quantum Simulation application layer" />
+  <Action name="Create detailed documentation for Quantum Chemistry layer" description="Develop comprehensive documentation for the Quantum Chemistry application layer" />
+</Actions>
