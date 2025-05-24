@@ -28,6 +28,7 @@ export default function DocumentCreationProcess() {
             <li>Use the Quantum Optimization Layer Documentation template for Quantum Optimization Layer documents</li>
             <li>Use the Quantum Simulation Layer Documentation template for Quantum Simulation Layer documents</li>
             <li>Use the Quantum Chemistry Layer Documentation template for Quantum Chemistry Layer documents</li>
+            <li>Use the Quantum Machine Intelligence Layer Documentation template for Quantum Machine Intelligence Layer documents</li>
           </ul>
         </Step>
         
@@ -40,6 +41,7 @@ export default function DocumentCreationProcess() {
             <li>Document ID following the GAIA-QAO naming convention</li>
             <li>InfoCode following the QAO-XXX-YYYY-AMP360Q format</li>
             <li>Applicable standards (EASA, DO-178C, DO-330, ARP4754A)</li>
+            <li>QMI-specific document types</li>
           </ul>
         </Step>
         

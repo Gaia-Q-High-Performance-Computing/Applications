@@ -132,6 +132,15 @@ This matrix covers the following standards:
 | QAVG-4 | Quantum-classical interface verification | All Quantum Algorithms | PLANNED | Interface Test Results | [GAIA-QAO-TEST-INTERFACE-2025-001](https://gaia-qao.docs/tests/GAIA-QAO-TEST-INTERFACE-2025-001) | Scheduled for Q3 2025 | S. Patel | 2025-09-30 |
 | QAVG-5 | Quantum algorithm performance benchmarking | All Quantum Algorithms | PARTIALLY COMPLIANT | Benchmark Results | [GAIA-QAO-BENCH-PERF-2025-001](https://gaia-qao.docs/benchmarks/GAIA-QAO-BENCH-PERF-2025-001) | Initial benchmarking completed, comprehensive benchmarking planned | L. Garcia | 2025-10-31 |
 
+### 6.2 Quantum Machine Intelligence (QMI) Standards
+
+| ID | Requirement | Applicability | Compliance Status | Evidence | Evidence Link | Gap/Notes | Owner | Due Date |
+|----|-------------|---------------|-------------------|----------|---------------|-----------|-------|----------|
+| QMI-1 | Hybrid Classical-Quantum Algorithms | QMI Systems | PARTIALLY COMPLIANT | Algorithm Design Document | [GAIA-QAO-DESIGN-QMI-2025-001](https://gaia-qao.docs/design/GAIA-QAO-DESIGN-QMI-2025-001) | Hybrid algorithm design in progress | A. Pelliccia | 2025-08-15 |
+| QMI-2 | Quantum Learning: Quantum Kernels, QAOA, Variational Circuits | QMI Systems | PARTIALLY COMPLIANT | Learning Algorithm Specification | [GAIA-QAO-SPEC-QMI-LEARN-2025-001](https://gaia-qao.docs/specifications/GAIA-QAO-SPEC-QMI-LEARN-2025-001) | Learning algorithm specification in progress | M. Wong | 2025-09-30 |
+| QMI-3 | Multimodal Processing: Textual, Sensor, IoT, Quantum Telemetry Data | QMI Systems | PLANNED | Processing Framework Document | [GAIA-QAO-FRAMEWORK-QMI-PROC-2025-001](https://gaia-qao.docs/frameworks/GAIA-QAO-FRAMEWORK-QMI-PROC-2025-001) | Scheduled for Q4 2025 | S. Patel | 2025-11-30 |
+| QMI-4 | CO2-aware Optimization: Minimization of emissions in sustainable HPC centers | QMI Systems | PLANNED | Optimization Strategy Document | [GAIA-QAO-STRATEGY-QMI-OPT-2025-001](https://gaia-qao.docs/strategies/GAIA-QAO-STRATEGY-QMI-OPT-2025-001) | Scheduled for Q4 2025 | L. Garcia | 2025-12-15 |
+
 ## 7. Deviations and Mitigations
 
 ### 7.1 Identified Deviations
@@ -162,7 +171,8 @@ This matrix covers the following standards:
 | EASA CS-25 | 0 | 2 | 0 | 2 | 4 | 0 | 0 | 8 |
 | DO-330 | 0 | 2 | 0 | 0 | 3 | 0 | 0 | 5 |
 | QAVG-2025 | 1 | 2 | 0 | 0 | 2 | 0 | 0 | 5 |
-| **Total** | **10** | **12** | **0** | **2** | **14** | **0** | **0** | **38** |
+| QMI-2025 | 0 | 2 | 0 | 0 | 2 | 0 | 0 | 4 |
+| **Total** | **10** | **14** | **0** | **2** | **16** | **0** | **0** | **42** |
 
 ### 8.2 Compliance Roadmap
 
@@ -231,6 +241,7 @@ This matrix covers the following standards:
 | DAL | Design Assurance Level |
 | TQL | Tool Qualification Level |
 | QAVG | Quantum Algorithm Verification Guidelines |
+| QMI | Quantum Machine Intelligence |
 | SOI | Stage of Involvement |
 | SSA | System Safety Assessment |
 | QSVM | Quantum Support Vector Machine |

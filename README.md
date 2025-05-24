@@ -5,7 +5,7 @@
 **Quantum Optimization**: [Optimization algorithms](https://github.com/Gaia-Q-High-Performance-Computing/application-layers/blob/main/README.md) for aerospace problems  
 **Quantum Simulation**: [Simulation of physical systems and materials](https://github.com/Gaia-Q-High-Performance-Computing/application-layers/blob/main/README.md)  
 **Quantum Chemistry**: [Molecular modeling](https://github.com/Gaia-Q-High-Performance-Computing/application-layers/blob/main/README.md) for new aerospace materials
-
+**Quantum Machine Intelligence**: [QMI](https://github.com/Gaia-Q-High-Performance-Computing/application-layers/blob/main/docs/architecture/overview.md) for intelligent aerospace systems
 
 > **DISCLAIMER: GenAI Proposal Status**  
 > This document was generated with AI assistance and represents a proposed overview of quantum computing application layers within GAIA Quantum Aerospace Organization (GAIA-QAO). The content is subject to review, modification, and approval by authorized stakeholders.
@@ -136,6 +136,26 @@ The Quantum Chemistry layer implements quantum algorithms for molecular modeling
 - Utilizes optimization from Quantum Optimization
 - Leverages predictive models from Quantum Machine Learning
 
+### Quantum Machine Intelligence
+
+The Quantum Machine Intelligence (QMI) layer combines quantum computing, machine learning, advanced sensors, and ethical governance to enable adaptive and intelligent operation of quantum-semantic aerospace systems.
+
+**Key Components:**
+- Hybrid Classical-Quantum Algorithms
+- Quantum Learning: Quantum Kernels, QAOA, Variational Circuits
+- Multimodal Processing: Textual, Sensor, IoT, Quantum Telemetry Data
+- CO2-aware Optimization: Minimization of emissions in sustainable HPC centers
+
+**Use Cases:**
+- Sustainable Materials: Quantum simulation for ecological design
+- Aerospace Traffic: Optimal routes and predictive management
+- Cybersecurity: Anomaly detection with quantum big data
+- Predictive Maintenance: Real-time telemetry processing
+- Creative Design: Quantum solvers for complex aerospace problems
+
+**Integration Points:**
+- Compatible with `AGAD`, `AMEDEO`, `UXT-Q`, `GAIA-Q-Hub.it`, `GA-SToP-CO2`, `Q-ASIN-Q`
+
 ## Integration Framework
 
 The application layers are integrated through a comprehensive framework that enables seamless collaboration and data exchange:
@@ -264,6 +284,7 @@ Detailed documentation for each application layer is available in the respective
 - [Quantum Optimization](./optimization/README.md)
 - [Quantum Simulation](./simulation/README.md)
 - [Quantum Chemistry](./chemistry/README.md)
+- [Quantum Machine Intelligence](./docs/architecture/overview.md)
 
 
 API documentation is available at [https://docs.gaia-qao.org/application-layers](https://docs.gaia-qao.org/application-layers).

@@ -127,6 +127,56 @@ export default function MetadataStandards() {
             <TableCell>VERIF-REPORT</TableCell>
             <TableCell>QAO-VERIF-REPORT-2025-AMP360Q</TableCell>
           </TableRow>
+          <TableRow>
+            <TableCell>Quantum Machine Intelligence</TableCell>
+            <TableCell>QMI</TableCell>
+            <TableCell>QAO-QMI-2025-AMP360Q</TableCell>
+          </TableRow>
+        </TableBody>
+      </Table>
+
+      <h2 className="text-2xl font-semibold mb-4">5. QMI Metadata Examples</h2>
+      
+      <Table>
+        <TableHeader>
+          <TableRow>
+            <TableHead>Field</TableHead>
+            <TableHead>Description</TableHead>
+            <TableHead>Format</TableHead>
+            <TableHead>Example</TableHead>
+          </TableRow>
+        </TableHeader>
+        <TableBody>
+          <TableRow>
+            <TableCell>Status</TableCell>
+            <TableCell>Current document status</TableCell>
+            <TableCell>DRAFT, REVIEW, APPROVED, RELEASED</TableCell>
+            <TableCell>DRAFT</TableCell>
+          </TableRow>
+          <TableRow>
+            <TableCell>Filename</TableCell>
+            <TableCell>Document filename</TableCell>
+            <TableCell>GAIA-QAO-QMI-v[Version].md</TableCell>
+            <TableCell>GAIA-QAO-QMI-v1.0.md</TableCell>
+          </TableRow>
+          <TableRow>
+            <TableCell>Version</TableCell>
+            <TableCell>Document version</TableCell>
+            <TableCell>[Major].[Minor]</TableCell>
+            <TableCell>1.0</TableCell>
+          </TableRow>
+          <TableRow>
+            <TableCell>InfoCode</TableCell>
+            <TableCell>Unique document identifier</TableCell>
+            <TableCell>QAO-QMI-[YEAR]-AMP360Q</TableCell>
+            <TableCell>QAO-QMI-2025-AMP360Q</TableCell>
+          </TableRow>
+          <TableRow>
+            <TableCell>Extensions</TableCell>
+            <TableCell>Applicable standards</TableCell>
+            <TableCell>[Standard1, Standard2, ...]</TableCell>
+            <TableCell>[EASA, DO-178C, DO-330, ARP4754A]</TableCell>
+          </TableRow>
         </TableBody>
       </Table>
 
@@ -154,4 +204,3 @@ export default function MetadataStandards() {
     </div>
   );
 }
-```
