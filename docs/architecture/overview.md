@@ -20,6 +20,31 @@ The Quantum Simulation Layer Documentation provides comprehensive documentation 
 ### Quantum Chemistry Layer Documentation
 The Quantum Chemistry Layer Documentation provides comprehensive documentation for the Quantum Chemistry application layer. It includes detailed descriptions of the molecular modeling tools, algorithms, and processes involved in developing new aerospace materials using quantum computing.
 
+### QMI – Quantum Machine Intelligence
+
+**InfoCode:** QAO-AI-QMI-DEF-0001
+**Domains:** GAIA-QAO, GAIA-Q-HPC, GAIA-Q-SCIREF
+**Definition:** Quantum Machine Intelligence (QMI) es la arquitectura que combina computación cuántica, aprendizaje automático, sensores avanzados y gobernanza ética para permitir la operación adaptativa e inteligente de sistemas aeroespaciales cuántico-semánticos.
+
+#### Características Clave:
+
+* **Hibridación Clásico–Cuántica:** Algoritmos de IA tradicionales + circuitos cuánticos.
+* **Aprendizaje Cuántico:** Kernels cuánticos, QAOA, circuitos variacionales.
+* **Procesamiento Multimodal:** Datos textuales, sensoriales, IoT y telemetría cuántica.
+* **Optimización CO2-aware:** Minimización de emisiones en centros HPC sostenibles.
+
+#### Casos de Uso:
+
+* **Materiales Sostenibles:** Simulación cuántica para diseño ecológico.
+* **Tráfico Aeroespacial:** Rutas óptimas y gestión predictiva.
+* **Ciberseguridad:** Detección de anomalías con big data cuántico.
+* **Mantenimiento Predictivo:** Procesamiento en tiempo real de telemetría.
+* **Diseño Creativo:** Quantum solvers para problemas aeronáuticos complejos.
+
+#### Integraciones:
+
+* Compatible con `AGAD`, `AMEDEO`, `UXT-Q`, `GAIA-Q-Hub.it`, `GA-SToP-CO2`, `Q-ASIN-Q`
+
 ### Active Quantum Reporting Framework
 The Active Quantum Reporting Framework (AQR) is designed to provide real-time reporting and analysis of quantum operations within the GAIA-QAO system. This framework ensures that all quantum activities are monitored, logged, and analyzed for performance, security, and compliance.
 

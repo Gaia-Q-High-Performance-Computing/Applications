@@ -28,6 +28,7 @@ export default function AlgorithmCaseStudyTemplate() {
           <TabsTrigger value="qopt">Quantum Optimization Layer Documentation</TabsTrigger>
           <TabsTrigger value="qsim">Quantum Simulation Layer Documentation</TabsTrigger>
           <TabsTrigger value="qchem">Quantum Chemistry Layer Documentation</TabsTrigger>
+          <TabsTrigger value="qmi">Quantum Machine Intelligence Case Study</TabsTrigger>
         </TabsList>
         
         <TabsContent value="overview" className="p-4">
@@ -378,6 +379,68 @@ export default function AlgorithmCaseStudyTemplate() {
               </p>
             </CardContent>
           </Card>
+        </TabsContent>
+
+        <TabsContent value="qmi" className="p-4">
+          <h2 className="text-2xl font-semibold mb-4">Quantum Machine Intelligence Case Study</h2>
+          <p className="mb-4">
+            This case study demonstrates the application of Quantum Machine Intelligence (QMI) in the Ampel360 BWB Q100 aircraft. It provides a comprehensive example of how QMI can be used to enhance various aerospace systems through adaptive and intelligent operations.
+          </p>
+          
+          <h3 className="text-xl font-semibold mb-2">1. Purpose</h3>
+          <p className="mb-4">
+            The purpose of this case study is to:
+          </p>
+          <ul className="list-disc pl-6 mb-4">
+            <li>Showcase the practical application of QMI in aerospace systems</li>
+            <li>Provide a template for implementing QMI in other aerospace projects</li>
+            <li>Generate evidence for the benefits of QMI in enhancing system performance</li>
+            <li>Validate the effectiveness of QMI in real-world scenarios</li>
+          </ul>
+          
+          <h3 className="text-xl font-semibold mb-2">2. QMI Overview</h3>
+          <p className="mb-4">
+            Quantum Machine Intelligence (QMI) combines quantum computing, machine learning, advanced sensors, and ethical governance to enable adaptive and intelligent operation of quantum-semantic aerospace systems.
+          </p>
+          
+          <Card>
+            <CardHeader>
+              <CardTitle>Key Characteristics</CardTitle>
+            </CardHeader>
+            <CardContent>
+              <ul className="list-disc pl-6">
+                <li>Hybrid Classical-Quantum Algorithms: Combines traditional AI algorithms with quantum circuits</li>
+                <li>Quantum Learning: Utilizes quantum kernels, QAOA, and variational circuits</li>
+                <li>Multimodal Processing: Handles textual, sensor, IoT, and quantum telemetry data</li>
+                <li>CO2-aware Optimization: Minimizes emissions in sustainable HPC centers</li>
+              </ul>
+            </CardContent>
+          </Card>
+          
+          <h3 className="text-xl font-semibold mb-2">3. Use Cases</h3>
+          <p className="mb-4">
+            QMI can be applied to various aerospace systems to enhance their performance and capabilities. Some key use cases include:
+          </p>
+          <ul className="list-disc pl-6 mb-4">
+            <li>Sustainable Materials: Quantum simulation for ecological design</li>
+            <li>Aerospace Traffic: Optimal routes and predictive management</li>
+            <li>Cybersecurity: Anomaly detection with quantum big data</li>
+            <li>Predictive Maintenance: Real-time telemetry processing</li>
+            <li>Creative Design: Quantum solvers for complex aerospace problems</li>
+          </ul>
+          
+          <h3 className="text-xl font-semibold mb-2">4. Integrations</h3>
+          <p className="mb-4">
+            QMI is compatible with various systems and platforms, enabling seamless integration and enhanced functionality. Some key integrations include:
+          </p>
+          <ul className="list-disc pl-6 mb-4">
+            <li>AGAD</li>
+            <li>AMEDEO</li>
+            <li>UXT-Q</li>
+            <li>GAIA-Q-Hub.it</li>
+            <li>GA-SToP-CO2</li>
+            <li>Q-ASIN-Q</li>
+          </ul>
         </TabsContent>
       </Tabs>
       
