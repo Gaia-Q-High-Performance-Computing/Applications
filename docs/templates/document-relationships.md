@@ -184,6 +184,23 @@ export default function DocumentRelationships() {
             </ul>
           </CardContent>
         </Card>
+
+        <Card>
+          <CardHeader>
+            <CardTitle>GAIA-QAO CFD Automation Script</CardTitle>
+          </CardHeader>
+          <CardContent>
+            <p className="mb-2">The GAIA-QAO CFD Automation Script:</p>
+            <ul className="list-disc pl-6">
+              <li>Automates the Computational Fluid Dynamics (CFD) workflow using OpenFOAM</li>
+              <li>Includes validation, error handling, and scalability features</li>
+              <li>Ensures robust and efficient simulations</li>
+            </ul>
+            <p className="mt-4">
+              <a href="https://raw.githubusercontent.com/your-repo/runCFD.sh" className="text-blue-500 underline">Download the script</a>
+            </p>
+          </CardContent>
+        </Card>
       </div>
       
       <h2 className="text-2xl font-semibold mb-4">3. Traceability Requirements</h2>

@@ -26,3 +26,10 @@ def load_agent_profile(path: Path) -> AgentProfile:
         description=data.get("description", {}).get("summary", ""),
         metadata=data.get("metadata", {}),
     )
+
+
+def load_cfd_automation_config(path: Path) -> Dict[str, Any]:
+    """Load the GAIA-QAO CFD Automation Script configuration from a YAML file."""
+    with path.open("r", encoding="utf-8") as f:
+        config = yaml.safe_load(f)
+    return config
