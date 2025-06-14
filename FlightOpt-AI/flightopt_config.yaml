@@ -1,0 +1,4 @@
+# Simulation parameters
+max_altitude: 40000
+min_altitude: 10000
+default_speed: 450

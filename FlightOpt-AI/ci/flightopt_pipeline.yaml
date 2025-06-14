@@ -1,0 +1,3 @@
+# Placeholder CI/CD pipeline
+steps:
+  - run: echo "Run FlightOpt pipeline"
