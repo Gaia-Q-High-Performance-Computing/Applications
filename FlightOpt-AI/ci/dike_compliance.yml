@@ -1,0 +1,3 @@
+# Placeholder CI for dike compliance
+steps:
+  - run: echo "Check dike compliance"
